@@ -8,14 +8,16 @@
 	<title>@yield('title','Shipzzy')</title>
 	<link rel="stylesheet" href="{{base_url('web/css/styler.css')}}" />
 	<link rel="stylesheet" href="{{base_url('web/css/theme-pink.css')}}" id="template-color" />
-	<!-- <link rel="stylesheet" href="{{base_url('web/css/jquery-ui.css')}}"> -->
+	<link rel="stylesheet" href="{{base_url('web/css/jquery-ui.css')}}">
 	<link rel="stylesheet" href="{{base_url('web/css/jquery-ui.theme.css')}}" />
 	<link rel="stylesheet" href="{{base_url('web/css/style.css')}}" />
+
 	<link rel="stylesheet" href="{{base_url('web/css/animate.css')}}" />
 	<link rel="stylesheet" href="{{base_url('web/css/icons.css')}}" />
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<!-- <link rel="shortcut icon" href="{{base_url('web/images/favicon.ico')}}" /> -->
 	<script src="{{base_url('web/js/e808bf9397.js')}}"></script>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 	@stack('styles')
 	
@@ -38,7 +40,7 @@
     <script src="{{base_url('web/js/jquery.min.js')}}"></script>
 	<script src="{{base_url('web/js/jquery-ui.min.js')}}"></script>
 	<script src="{{base_url('web/js/jquery-ui-timepicker-addon.min.js')}}"></script>
-	<script src="{{base_url('web/js/jquery.uniform.min.js')}}"></script>
+	<!-- <script src="{{base_url('web/js/jquery.uniform.min.js')}}"></script> -->
 	<script src="{{base_url('web/js/jquery.slicknav.min.js')}}"></script>
 	<script src="{{base_url('web/js/wow.min.js')}}"></script>
 	<script src="{{base_url('web/js/jquery-ui-sliderAccess.js')}}"></script>

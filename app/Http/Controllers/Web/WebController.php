@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\VerifyMail;
 use Validator;
 use Hash;
 use DB;
@@ -24,6 +26,72 @@ class WebController extends Controller
     public function about()
     {
         return view('web.about');
+    }
+
+    public function contact()
+    {
+        return view('web.contact-us');
+    }
+
+    public function full_truck_form()
+    {
+        return view('web.full_truck_form');
+    }
+
+    public function auto_truck_form()
+    {
+        return view('web.auto_truck_form');
+    }
+
+    public function less_truck_form()
+    {
+        return view('web.less_truck_form');
+    }
+    
+
+    public function freight_class()
+    {
+        return view('web.services.freight-class-for-ltl-shipping-explained');
+    }
+
+    public function ltl_shipment()
+    {
+        return view('web.services.meaning-of-ltl-shipment');
+    }
+    
+    public function liftgate()
+    {
+        return view('web.services.liftgate-limitation');
+    }
+    
+    public function ftl_shipment()
+    {
+        return view('web.services.meaning-of-ftl-shipment');
+    }
+    
+    public function partial_shipment()
+    {
+        return view('web.services.meaning-of-partial-shipment');
+    }
+    
+    public function volume_shipment()
+    {
+        return view('web.services.meaning-of-volume-ltl-shipment');
+    }
+
+    public function trailer_types()
+    {
+        return view('web.services.trailer-types-and-dimensions');
+    }
+
+    public function limited_access()
+    {
+        return view('web.services.what-is-considered-limited-access');
+    }
+
+    public function pallet_skid()
+    {
+        return view('web.services.whats-the-difference-between-a-pallet-skid-and-crate');
     }
 
     public function login(Request $request)
@@ -74,6 +142,7 @@ class WebController extends Controller
                     DB::rollback();
                     return false;
                 }
+                $status = $this->mailSend($user->email, $user->id, $user->role);  
                 return response()->json(['success' => 'Customer Record Added Successfully']);
             }
         }
@@ -81,6 +150,49 @@ class WebController extends Controller
         {
             return view('web.register');
         }
+    }
+
+    public function mailSend($username, $userId ,$type)
+    {
+        DB::beginTransaction();
+        try {
+            Mail::to($username)->send(new VerifyMail($username, $userId, $type));
+          
+            if (Mail::failures()) {
+                Session::flash('message','The email entered is not a valid email address!');
+                Session::flash('alert-class','danger');
+            }else{
+                Session::flash('message','We have sent you an email,
+                please check it and confirm your email to finish creating your account');
+                Session::flash('alert-class','success');
+            }
+        }catch(\Exception $e) {
+            $customer = Customer::where('user_id', $userId)->delete();
+            $user     =User::where('id',$userId)->delete();
+            
+            Session::flash('message','The email entered is not a valid email address!');
+            Session::flash('alert-class','danger');
+        }
+        return true;
+    }
+
+    public function emailVerify($id)
+    {
+        $status = Customer::with('getUsers')->where('user_id',$id)->first();
+        $status->update([
+            'status' => '1',
+                ]);
+        $status->getUsers->update([
+            'status' => '1',
+        ]);
+            if ($status){
+            Session::flash('message','Email Verified Successfully!');
+            Session::flash('alert-class','success');
+        }else{
+            Session::flash('message','Failed to Verify Email!');
+            Session::flash('alert-class','danger');
+        }
+        return redirect()->route('authenticate.login');
     }
 
     public function logout(Request $request)

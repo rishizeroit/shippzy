@@ -1,150 +1,148 @@
 @extends('web.app.layout')
 @section('title', 'about-us')
 @section('content')
+<!-- Main -->
 <main class="main" role="main">
-		<!-- Page info -->
-		<header class="site-title color">
-			<div class="wrap">
-				<div class="container">
-					<h1>About us</h1>
-					<nav role="navigation" class="breadcrumbs">
-						<ul>
-							<li><a href="index.html" title="Home">Home</a></li>
-							<li>About us</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
-		<!-- //Page info -->
+
+<!-- Intro -->
+<div class="intro" style="background:url({{base_url('web/images/about-media.jpg')}}) no-repeat 0 0; height: 571px; min-height: 571px;">
+	<div class="wrap">
+		<div class="textwidget">
+			<div class="txt-about">About us</div>
+			<a href="#" class="get-free-quotes-btn">Get Free Quotes</a>
+		</div>
+	</div>
+</div>
+<!-- //Intro -->
+
+
+
+<div class="wrap">
+	<div class="row">
+		<!--- Content -->
+		<div class="content three-fourth textongrey mrg-top-40">
+			<h2>About us</h2>					
+			<p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p> 
+			<h2>Benefits of LTL shipping.</h2>
+			<ul>
+				<li><strong>Reduces costs:</strong> When booking an LTL shipment, you only pay for the portion of the trailer used. The rest of the cost is covered by the other occupants of the trailer’s space.&nbsp;</li>
+				<li><strong>Increases security:</strong> Most LTL shipments are packaged onto <a href="/how-to-ship-freight/pallet-shipping/">pallets</a> before being loaded onto a truck. One well-packaged pallet has a better chance of remaining secure than shipments with multiple smaller handling units.</li>
+				<li><strong>Additional service options:</strong> When shipping via LTL, you gain access to special services like liftgates and inside pickup and delivery.</li>
+				<li><strong>Tracking:</strong> LTL carriers offer tracking capabilities through the <a href="/how-to-ship-freight/bill-of-lading/">bill of lading</a> number, PRO number, PO number, shipment reference number and pick up date range, to name a few.&nbsp;</li>
+			</ul>
+			<h2>When to choose LTL shipping.</h2>
+			<ul>
+				<li>LTL shipping is ideal for businesses who have freight under 15,000 pounds and do not require a full trailer.</li>
+				<li>Consider LTL when looking to maximize cost savings.</li>
+			</ul>
+
+
+
+		</div>
+		<!--- //Content -->
 		
-		<div class="wrap">
-			<div class="row">
-				<!--- Content -->
-				<div class="content three-fourth textongrey">
-					<h2>Our story</h2>
-					<p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> 
-					<p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p> 
-					<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p> 
-					<h3>Our mission</h3>
-					<p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> 
-					<h3>Our vision</h3>
-					<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline </p>
+		<!--- Sidebar -->
+		<aside class="one-fourth sidebar right offset">
+			<!-- Widget -->
+			<div class="widget">
+				<h4>Get Your Shipping Quote</h4>
+				<div class="textwidget">							
+					<div class="txt-form">
+						<div class="pickup-frm">
+							<div class="txt-hd">Pickup location</div>
+							<input type="text" name="" placeholder="Zip Code">	
+						</div>	
+						<div class="pickup-frm-2">						
+							<div class="pick-hd">Pickup location type</div>
+							<input type="radio" id="business" name="gender" value="Business"><label for="Business">Business</label><br>
+							<input type="radio" id="Residential" name="gender" value="Residential"><label for="Residential">Residential</label>	
+							<button class="btnSQSubmit" data-url="#" id="SQ0">Start Quoting</button>							
+					   </div>
+					 </div>
 				</div>
-				<!--- //Content -->
-				
-				<!--- Sidebar -->
-				<aside class="one-fourth sidebar right offset">
-					<!-- Widget -->
-					<div class="widget">
-						<h4>Why book with us?</h4>
-						<div class="textwidget">
-							<h5>Reliable and Safe</h5>
-							<p>Lorem ipsum dolor sit amet,  do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
-							<h5>No hidden fees</h5>
-							<p>Lorem ipsum dolor sit amet,  do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
-							<h5>We’re Always Here</h5>
-							<p>Lorem ipsum dolor sit amet,  do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
-						</div>
-					</div>
-					<!-- //Widget -->
-					
-					<!-- Widget -->
-					<div class="widget">
-						<h4>Advertisment</h4>
-						<a href="#"><img src="{{base_url('web/images/advertisment.jpg')}}" alt=""></a>
-					</div>
-					<!-- //Widget -->
-				</aside>
-				<!--- //Sidebar -->
 			</div>
-		</div>
-	</main>
-
-
-
-<div class="services iconic white">
-		<div class="wrap">
-			<div class="row">
-				<!-- Item -->
-				<div class="one-third wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-					<span class="circle"><span class="icon  icon-themeenergy_savings"></span></span>
-					<h3>Fixed rates</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
-				</div>
-				<!-- //Item -->
-				
-				<!-- Item -->
-				<div class="one-third wow fadeIn" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-					<span class="circle"><span class="icon icon-themeenergy_lockpad"></span></span>
-					<h3>Reliable transfers</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
-				</div>
-				<!-- //Item -->
-				
-				<!-- Item -->
-				<div class="one-third wow fadeIn" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
-					<span class="circle"><span class="icon icon-themeenergy_open-wallet"></span></span>
-					<h3>No booking fees</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
-				</div>
-				<!-- //Item -->
-				
-				<!-- Item -->
-				<div class="one-third wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-					<span class="circle"><span class="icon icon-themeenergy_heart"></span></span>
-					<h3>Free cancellation</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
-				</div>
-				<!-- //Item -->
-				
-				<!-- Item -->
-				<div class="one-third wow fadeIn" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-					<span class="circle"><span class="icon icon-themeenergy_magic-trick"></span></span>
-					<h3>Booking flexibility</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
-				</div>
-				<!-- //Item -->
-				
-				<!-- Item -->
-				<div class="one-third wow fadeIn" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
-					<span class="circle"><span class="icon icon-themeenergy_call"></span></span>
-					<h3>24h customer service</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
-				</div>
-				<!-- //Item -->
-				
-				<!-- Item -->
-				<div class="one-third wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-					<span class="circle"><span class="icon icon-themeenergy_cup"></span></span>
-					<h3>Award winning service</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
-				</div>
-				<!-- //Item -->
-				
-				<!-- Item -->
-				<div class="one-third wow fadeIn" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-					<span class="circle"><span class="icon icon-themeenergy_attach"></span></span>
-					<h3>Benefits for partners</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
-				</div>
-				<!-- //Item -->
-				
-				<!-- Item -->
-				<div class="one-third wow fadeIn" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
-					<span class="circle"><span class="icon icon-themeenergy_stars"></span></span>
-					<h3>Quality vehicles</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
-				</div>
-				<!-- //Item -->
+			<!-- //Widget -->
+			
+			<!-- Widget -->
+			<div class="widget">
+				<h4>Advertisment</h4>
+				<a href="#"><img src="{{base_url('web/images/advertisment.jpg')}}" alt=""></a>
 			</div>
-		</div>
+			<!-- //Widget -->
+		</aside>
+		<!--- //Sidebar -->
 	</div>
+</div>
 
-   <div class="color cta">
-		<div class="wrap">
-			<p class="wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">Like what you see? Are you ready to stand out? You know what to do.</p>
-			<a href="#" class="btn huge black right wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">Purchase theme</a>
+
+<div class="container">
+
+<!-- Services -->
+<div class="services boxed white" id="services">
+	<!-- Item -->
+	<article class="one-third wow fadeIn">
+		<figure class="featured-image">
+			<img src="{{base_url('web/images/img.jpg')}}" alt="" />
+			<div class="overlay">
+				<a href="services.html" class="expand">+</a>
+			</div>
+		</figure>
+		<div class="details">
+			<h4><a href="services.html">Full truck load</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			<a class="more" title="Read more" href="services.html">Read more</a>
 		</div>
+	</article>
+	<!-- //Item -->
+	
+	<!-- Item -->
+	<article class="one-third wow fadeIn" data-wow-delay=".2s">
+		<figure class="featured-image">
+			<img src="{{base_url('web/images/img4.jpg')}}" alt="" />
+			<div class="overlay">
+				<a href="services.html" class="expand">+</a>
+			</div>
+		</figure>
+		<div class="details">
+			<h4><a href="services.html">less then truck load</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			<a class="more" title="Read more" href="#">Read more</a>
+		</div>
+	</article>
+	<!-- //Item -->
+	
+	<!-- Item -->
+	<article class="one-third wow fadeIn" data-wow-delay=".4s">
+		<figure class="featured-image">
+			<img src="{{base_url('web/images/img2.jpg')}}" alt="" />
+			<div class="overlay">
+				<a href="services.html" class="expand">+</a>
+			</div>
+		</figure>
+		<div class="details">
+			<h4><a href="services.html">auto transport</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			<a class="more" title="Read more" href="#">Read more</a>
+		</div>
+	</article>
+	<!-- //Item -->
+			
+</div></div>
+<!-- //Services -->
+
+		
+<!-- Call to action -->
+<div class="color-blue cta">
+	<div class="wrap">
+		<p class="wow fadeInLeft">Get your Shipping quote</p>
+			<form class="frm-pick-order wow fadeInRight">
+				<input type="text" name="" value="Pick up your order">
+				<button type="button">Start Quote</button>
+			</form>
 	</div>
+</div>
+<!-- //Call to action -->
+</main>
+<!-- //Main -->
+
 @endsection

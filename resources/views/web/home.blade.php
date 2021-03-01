@@ -1,17 +1,51 @@
 @extends('web.app.layout')
 @section('title', 'Shipzzy')
 @section('content')
+
 	<!-- Main -->
 	<main class="main" role="main">
 		<!-- Intro -->
 		<div class="intro">
 			<div class="wrap">
 				<div class="textwidget">
-					
+
+				<div class="brd-widget">
+
+						<form action="#" class="clearfix">
+							<div class="one-third">
+							<input type="radio" id="ftl-input" name="transport" value="Full" onclick="window.location='{{url('full-truck-form')}}'">
+								<div class="bg-3-step">	  	 
+								 	 <img src="{{base_url('web/images/full-truck-load-icon.png')}}">
+								 	 <label for="male">Full truck load</label>	 	
+								</div>
+							</div>
+
+
+							<div class="one-third">
+								 <input type="radio" id="lttl-input" name="transport" value="Less" onclick="window.location='{{url('less-truck-form')}}'">
+								<div class="bg-3-step">	  
+								   <img src="{{base_url('web/images/less-than-truck-load-icon.png')}}">
+								   <label for="female">Less than truck load</label>
+								</div>
+							</div>
+
+
+							<div class="one-third">
+								 <input type="radio" id="auto-tran-input" name="transport" value="Auto" onclick="window.location='{{url('auto-truck-form')}}'">
+									<div class="bg-3-step">	  
+									   <img src="{{base_url('web/images/auto-transport-icon.png')}}">
+									   <label for="other">Auto transport</label>
+									</div>
+
+							</div>
+
+						 </form>
 				</div>
-			</div>
+				
 		</div>
-		<!-- //Intro -->
+	</div>
+</div>
+<!-- //Intro -->
 		
 
 
@@ -22,73 +56,73 @@
 				<div class="row">
 					<!-- Item -->
 					<div class="one-third wow fadeIn">
-						<span class="circle"><span class="icon  icon-themeenergy_savings"></span></span>
-						<h3>Fixed rates</h3>
+						<a href="{{url('ltl-shipment')}}"><span class="circle"><span class="icon fa fa-truck"></span></span></a>
+						<h3><a href="{{url('ltl-shipment')}}">Meaning of LTL shipment</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
 					</div>
 					<!-- //Item -->
 					
 					<!-- Item -->
 					<div class="one-third wow fadeIn" data-wow-delay=".2s">
-						<span class="circle"><span class="icon icon-themeenergy_lockpad"></span></span>
-						<h3>Reliable transfers</h3>
+						<a href="{{url('ftl-shipment')}}"><span class="circle"><span class="icon fas fa-truck-moving"></span></span></a>
+						<h3><a href="{{url('ftl-shipment')}}">Meaning of FTL shipment</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
 					</div>
 					<!-- //Item -->
 					
 					<!-- Item -->
 					<div class="one-third wow fadeIn" data-wow-delay=".4s">
-						<span class="circle"><span class="icon icon-themeenergy_open-wallet"></span></span>
-						<h3>No booking fees</h3>
+						<a href="{{url('volume-shipment')}}"><span class="circle"><span class="icon fas fa-truck-loading"></span></span></a>
+						<h3><a href="{{url('volume-shipment')}}">Meaning of Volume LTL shipment</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
 					</div>
 					<!-- //Item -->
 					
 					<!-- Item -->
 					<div class="one-third wow fadeIn">
-						<span class="circle"><span class="icon icon-themeenergy_heart"></span></span>
-						<h3>Free cancellation</h3>
+						<a href="{{url('partial-shipment')}}"><span class="circle"><span class="icon icon-themeenergy_heart"></span></span></a>
+						<h3><a href="{{url('partial-shipment')}}">Meaning of partial shipment</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
 					</div>
 					<!-- //Item -->
 					
 					<!-- Item -->
 					<div class="one-third wow fadeIn" data-wow-delay=".2s">
-						<span class="circle"><span class="icon icon-themeenergy_magic-trick"></span></span>
-						<h3>Booking flexibility</h3>
+						<a href="{{url('limited-access')}}"><span class="circle"><span class="icon fal fa-truck-moving"></span></span></a>
+						<h3><a href="{{url('limited-access')}}">What is considered Limited Access</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
 					</div>
 					<!-- //Item -->
 					
 					<!-- Item -->
 					<div class="one-third wow fadeIn" data-wow-delay=".4s">
-						<span class="circle"><span class="icon icon-themeenergy_call"></span></span>
-						<h3>24h customer service</h3>
+						<a href="{{url('freight-class')}}"><span class="circle"><span class="icon far fa-truck-container"></span></span></a>
+						<h3><a href="{{url('freight-class')}}">Freight Class for LTL Shipping Explained</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
 					</div>
 					<!-- //Item -->
 					
 					<!-- Item -->
 					<div class="one-third wow fadeIn">
-						<span class="circle"><span class="icon icon-themeenergy_cup"></span></span>
-						<h3>Award winning service</h3>
+					<a href="{{url('trailer-types')}}"><span class="circle"><span class="icon fas fa-hand-peace"></span></span></a>
+						<h3><a href="{{url('trailer-types')}}">Trailer types and dimensions</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
 					</div>
 					<!-- //Item -->
 					
 					<!-- Item -->
 					<div class="one-third wow fadeIn" data-wow-delay=".2s">
-						<span class="circle"><span class="icon icon-themeenergy_attach"></span></span>
-						<h3>Benefits for partners</h3>
+						<a href="{{url('liftgate')}}"><span class="circle"><span class="icon fad fa-truck-loading"></span></span></a>
+						<h3><a href="{{url('liftgate')}}">Liftgate limitation</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
 					</div>
 					<!-- //Item -->
 					
 					<!-- Item -->
 					<div class="one-third wow fadeIn" data-wow-delay=".4s">
-						<span class="circle"><span class="icon icon-themeenergy_stars"></span></span>
-						<h3>Quality vehicles</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+						<a href="{{url('pallet-skid')}}"><span class="circle"><span class="icon icon-themeenergy_stars"></span></span></a>
+						<h3><a href="{{url('pallet-skid')}}">What's the Difference Between a Pallet, Skid and Crate?</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
 					</div>
 					<!-- //Item -->
 				</div>

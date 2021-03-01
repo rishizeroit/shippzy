@@ -38,10 +38,10 @@
 				
 				<nav role="navigation" class="foot-nav">
 					<ul>
-						<li><a href="#" title="Home">Home</a></li>
-						<li><a href="#" title="Blog">Blog</a></li>
-						<li><a href="#" title="About us">About us</a></li>
-						<li><a href="#" title="Contact us">Contact us</a></li>
+						<li><a href="{{url('/')}}" title="Home">Home</a></li>
+						<li><a href="{{url('/')}}" title="Blog">Blog</a></li>
+						<li><a href="{{url('about-us')}}" title="About us">About us</a></li>
+						<li><a href="{{url('contact-us')}}" title="Contact us">Contact us</a></li>
 						<li><a href="#" title="Terms of use">Terms of use</a></li>
 						<li><a href="#" title="Help">Help</a></li>
 						<li><a href="#" title="For partners">For partners</a></li>

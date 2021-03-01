@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e8e8e8;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* qoute ends here */
+
+
+/* shipment start here */
+
+.shipy-form-md {
+    background: #e8e8e8;
+}
+
+.shipment-md {
+    text-align: center;
+    padding: 13% 0 0 0;
+}
+
+.shipyzz-form-md {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.shipment-md h1 {
+    color: #08365b;
+    font-weight: bold;
+}
+
+.shipment-md h1 span {
+    color: #e56e25;
+}
+
+
+/* shipment ends here */
+
+
+/* requested start here */
+
+.requested-md {
+    margin: 3% 0 0 0;
+}
+
+.requested-md form label {
+    color: #08365b;
+    font-weight: bold;
+    float: left;
+}
+
+.requested-md form input#lname {
+    border: 1px solid #08365b;
+    width: 45%;
+    padding: 8px;
+    display: block;
+    outline: none;
+}
+
+.caution-md {
+    text-align: left;
+}
+
+.caution-md p {
+    font-size: 14px;
+    font-weight: 100;
+    color: #717171;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.caution-md p span {
+    color: #0a6bff;
+}
+
+
+/* caution ends here */
+
+
+/* left start here */
+
+.left-md {
+    width: 50%;
+    float: left;
+    margin: 10px 0 0 0;
+}
+
+.pickup-md {
+    margin: 3% 0 0 0;
+}
+
+.pickup-md form label {
+    color: #08365b;
+    font-weight: bold;
+    float: left;
+    padding: 0 0 10px 0;
+}
+
+.pickup-md form input#lname {
+    border: 1px solid #08365b;
+    width: 90%;
+    padding: 8px;
+    outline: none;
+}
+
+.pickup-caution {
+    text-align: left;
+    margin: 5px 0 0 0;
+}
+
+.pickup-caution p {
+    font-size: 14px;
+    font-weight: 100;
+    color: #717171;
+    padding: 0;
+}
+
+.pickup-caution p span {
+    color: #0a6bff;
+    font-size: 15px;
+}
+
+.pickup-caution .money-pi p {
+    color: #8e928e;
+    padding: 5px 0 10px 22px;
+}
+
+.pickup-caution p input#vehicle2 {
+    margin: 0 10px 0 0;
+}
+
+.pickup-md .pick-ser h6 span {
+    padding: 0 5px;
+    background: #106bfd;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.pickup-md .pick-ser h6 {
+    padding: 0;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 0 0 40px;
+}
+
+.pickup-md .pick-ser h6 input[type="checkbox"] {
+    margin: 0 10px 0 0;
+}
+
+.pickup-md .pick-ser h5 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+    color: #08365b;
+}
+
+
+/* left ends here */
+
+
+/* right start here */
+
+.right-md {
+    width: 50%;
+    float: right;
+    padding: 0 0 0 20px;
+    margin: 10px 0 0 0;
+}
+
+.dilevery-md {
+    margin: 3% 0 0 0;
+}
+
+.dilevery-md form label {
+    color: #08365b;
+    font-weight: bold;
+    float: left;
+    padding: 0 0 10px 0;
+}
+
+.dilevery-md form input#lname {
+    border: 1px solid #08365b;
+    width: 90%;
+    padding: 8px;
+    outline: none;
+}
+
+.dilevery-caution {
+    text-align: left;
+    margin: 5px 0 0 0;
+}
+
+.dilevery-caution p {
+    font-size: 14px;
+    font-weight: 100;
+    color: #717171;
+    padding: 0;
+}
+
+.dilevery-caution p span input#vehicle2 {
+    margin: 0 10px 0 0;
+}
+
+.dilevery-caution p span {
+    color: #0a6bff;
+    font-size: 15px;
+}
+
+.dilevery-caution .money-di p {
+    color: #8e928e;
+    padding: 5px 0 10px 22px;
+}
+
+.dilevery-md .delivery-ser h6 span {
+    padding: 0 5px;
+    background: #106bfd;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.dilevery-md .delivery-ser h6 {
+    padding: 0;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 0 0 40px;
+}
+
+.dilevery-md .delivery-ser h6 input[type="checkbox"] {
+    margin: 0 10px 0 0;
+}
+
+.dilevery-md .delivery-ser h5 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+    color: #08365b;
+}
+
+
+/* right ends here */
+
+.hazardous-md {
+    margin: 4% 0 0 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0;
+}
+
+.hazardous-md .sens-md {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hazardous-md .sens-md p {
+    color: #08365b;
+    font-weight: bold;
+}
+
+
+/* button coding start here */
+
+.switch {
+    position: relative;
+    display: block;
+    vertical-align: top;
+    width: 100px;
+    height: 30px;
+    padding: 3px;
+    margin: 0 10px 10px 0;
+    background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+    background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+    border-radius: 18px;
+    box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+.switch-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    box-sizing: content-box;
+}
+
+.switch-label {
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #08365b;
+    border-radius: inherit;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+    box-sizing: content-box;
+}
+
+.switch-label:before,
+.switch-label:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    line-height: 1;
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+    box-sizing: content-box;
+}
+
+.switch-label:before {
+    content: attr(data-off);
+    right: 11px;
+    color: #fff;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.switch-label:after {
+    content: attr(data-on);
+    left: 11px;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.switch-input:checked~.switch-label {
+    background: #e56e25;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.switch-input:checked~.switch-label:before {
+    opacity: 0;
+}
+
+.switch-input:checked~.switch-label:after {
+    opacity: 1;
+}
+
+.switch-handle {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+    background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.switch-handle:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+    background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+    border-radius: 6px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+
+.switch-input:checked~.switch-handle {
+    left: 74px;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Transition
+========================== */
+
+.switch-label,
+.switch-handle {
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+}
+
+
+/* button coding ends here */
+
+.two-buttons button {
+    border: 0;
+    background: #000;
+    float: left;
+    padding: 8px 15px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.two-buttons .btn-yes {
+    border: 0;
+    color: #fff;
+    background: #08365b;
+}
+
+.two-buttons .btn-no {
+    border: 0;
+    color: #fff;
+    background: #e56e25;
+}
+
+.hazardous-md .senstive-md {
+    text-align: left;
+}
+
+.hazardous-md .senstive-md h5 {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.hazardous-md .senstive-md h5 a {
+    color: #328cff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.hazardous-md .task-rabbit {
+    text-align: left;
+}
+
+.hazardous-md .task-rabbit h5 a {
+    color: #328cff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* hazardous ends here */
+
+
+/* new lwft start here */
+
+.item-dist {
+    width: 50%;
+    float: left;
+    margin: 30px 0 0 0;
+}
+
+.pickup-new {
+    margin: 3% 0 0 0;
+    text-align: left;
+}
+
+.pickup-new a img {
+    width: 21px;
+    margin: 4px 0 0 0;
+}
+
+.pickup-new form label {
+    color: #08365b;
+    font-weight: bold;
+}
+
+.pickup-new form input#lname {
+    border: 1px solid #08365b;
+    width: 90%;
+    padding: 8px;
+    outline: none;
+}
+
+.pickup-caution-new h6 {
+    font-size: 12px;
+    font-weight: 100;
+    color: #717171;
+    margin: 10px 0;
+}
+
+.right-condition {
+    margin: 4% 0 0 0;
+    text-align: left;
+}
+
+.right-condition h4 {
+    padding: 0 0 34px 0;
+    font-weight: bold;
+    color: #08365b;
+}
+
+.right-condition .used-buttons button {
+    border: 0;
+    background: #000;
+    float: left;
+    padding: 8px 15px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.right-condition .used-buttons .btn-used {
+    border: 0;
+    color: #fff;
+    background: #08365b;
+}
+
+.right-condition .used-buttons .btn-new {
+    border: 0;
+    color: #fff;
+    background: #e56e25;
+}
+
+.dimension-md .dimen-md {
+    width: 25%;
+    float: left;
+    color: #08365b;
+    margin: 0 0 15px 0;
+}
+
+.dimension-md .dimen-md label {
+    float: left;
+    font-weight: bold;
+    color: #08365b;
+}
+
+.dimension-md .lwh-md label {
+    color: #08365b;
+    font-weight: bold;
+    float: left;
+    padding: 0;
+}
+
+.dimension-md .lwh-md {
+    width: 25%;
+    float: left;
+    color: #08365b;
+    margin: 0 0 15px 0;
+}
+
+.dimension-md .lwh-md input[type=number] {
+    width: 20%;
+    padding: 8px 6px;
+    display: inline-block;
+    margin: 14px 0 0 0;
+    border-radius: 0;
+    border: 1px solid #08365b;
+    text-align: center;
+    float: left;
+    max-width: 100%;
+}
+
+.dimension-md .dimen-md input {
+    padding: 8px;
+    border: 1px solid #08365b;
+    float: left;
+    width: 80%;
+}
+
+
+/* dimensions ends here */
+
+
+/* calcu start here */
+
+.calcu-md p {
+    color: #006fc7;
+    margin: 15px;
+}
+
+.calcu-md {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.calcu-us {
+    width: 50%;
+    float: right;
+    text-align: right;
+}

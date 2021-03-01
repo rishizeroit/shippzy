@@ -9,6 +9,8 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Validation\Rule;
 use Validator;
 use Auth;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\VerifyMail;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
@@ -102,11 +104,55 @@ class LoginController extends Controller
                     DB::rollback();
                     return false;
                 }
+                $status = $this->sendMail($user->email, $user->id, $user->role);      
                 return response()->json(['success' => 'User Record Added Successfully']);
             }
         }else{
             return view('backend.register');
         }
+    }
+
+    public function sendMail($username, $userId, $type)
+    {
+        DB::beginTransaction();
+        try {
+            Mail::to($username)->send(new VerifyMail($username, $userId, $type));
+          
+            if (Mail::failures()) {
+                Session::flash('message','The email entered is not a valid email address!');
+                Session::flash('alert-class','danger');
+            }else{
+                Session::flash('message','We have sent you an email,
+                please check it and confirm your email to finish creating your account');
+                Session::flash('alert-class','success');
+            }
+        }catch(\Exception $e) {
+            $carrier = Carrier::where('user_id', $userId)->delete();
+            $user =User::where('id',$userId)->delete();
+            
+            Session::flash('message','The email entered is not a valid email address!');
+            Session::flash('alert-class','danger');
+        }
+        return true;
+    }
+
+    public function verifyEmail($id)
+    {
+        $status = Carrier::with('getCarUsers')->where('user_id',$id)->first();
+        $status->update([
+            'status' => '1',
+                ]);
+        $status->getCarUsers->update([
+            'status' => '1',
+        ]);
+            if ($status){
+            Session::flash('message','Email Verified Successfully!');
+            Session::flash('alert-class','success');
+        }else{
+            Session::flash('message','Failed to Verify Email!');
+            Session::flash('alert-class','danger');
+        }
+        return redirect()->route('user.login');
     }
 
 }
