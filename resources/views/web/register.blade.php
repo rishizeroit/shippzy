@@ -24,6 +24,9 @@
 				<div class="content one-half modal">
 					<!--Login-->
 					<div class="box">
+					<div class="alert alert-danger print-error-msg" style="display:none">
+						<ul></ul> 
+					</div>
 					<form id="customer_add" action="{{route('customer.register')}}" method="post">
 						@csrf
 						@method('POST')

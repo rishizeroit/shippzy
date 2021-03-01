@@ -8,7 +8,7 @@
 				<div class="container">
 					<h1>Login</h1>
 					<nav role="navigation" class="breadcrumbs">
-						<ul>
+						<ul> 
 							<li><a href="#" title="Home">Home</a></li>
 							<li>Login</li>
 						</ul>
@@ -24,6 +24,11 @@
 				<div class="content one-half modal">
 					<!--Login-->
 					<div class="box">
+						@if (session('message'))
+							<div class="alert alert-{{session('alert-class')}}" role="alert">
+								{!! session('message') !!}
+							</div>
+						@endif
 						<form id="customer_login" action="{{route('authenticate.login')}}" method="post">
 						@method('POST')
 						  @csrf
