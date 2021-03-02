@@ -11,7 +11,7 @@ class CarrierService extends Model
     
     public function service()
     {
-        return $this->hasMany('App\Models\Service', 'id','service_id');
+        return $this->belongsTo('App\Models\Service', 'service_id','id');
     }
 }
 

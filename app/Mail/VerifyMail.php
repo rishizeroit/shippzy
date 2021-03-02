@@ -37,7 +37,7 @@ class VerifyMail extends Mailable
                 'user_id' => $this->userId,
             ]);
         }else{
-            return $this->view('backend.verifyemail',[
+            return $this->view('backend.verify_email',[
                 'user_id' => $this->userId,
             ]);
         }

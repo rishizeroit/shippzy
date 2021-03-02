@@ -13,10 +13,10 @@
 			<!-- shipment ends here -->
 
 			<div class="requested-md">
-				<form action="/action_page.php">
+			
 				<label for="lname">Requested loading date</label><br><br>
 				<input type="date" id="lname" name="lname">
-				</form>
+				
 				<div class="caution-md">
 					<p>Requested date is subject to carrier acceptance and availability.</p>
 					<p><span>Caution: Carrier may not be able to accomadate same-day pickup requests.</span></p>
@@ -25,8 +25,9 @@
 	<!-- requested ends here -->
 	<div class="left-md">
 		<div class="pickup-md">
-			<form action="/action_page.php">
+		
 			<label for="lname">Pickup city or postal code</label><br>
+<<<<<<< HEAD
 			<select id="select-state" placeholder="Pick a state...">
 				<option value="">Select a state...</option>
 				<option value="AL">Alabama</option>
@@ -46,6 +47,21 @@
 				<option value="IN">Indiana</option>
 			</select>
 			</form>
+=======
+				<input type="text" name="city" list="cityname">
+					<datalist id="cityname" width="100%">
+						<option value="Boston">
+						<option value="Cambridge">
+						<option value="madan">
+						<option value="davinder">
+						<option value="manorma">
+						<option value="rajwinder">
+						<option value="kuldeep">
+						<option value="aman">
+					</datalist>
+
+		
+>>>>>>> b8cd3b8209d00bed052b6806ec049c1f3798f0f2
 			<div class="pickup-caution">
 				<p>Must be in the United State.</p>
 				<p><span><input type="checkbox" id="vehicle2" name="vehicle2" value="Car">I'd like to drop off my items at a carrier terminal</span></p>
@@ -66,10 +82,20 @@
 
 	<div class="right-md">
 			<div class="dilevery-md">
-				<form action="/action_page.php">
+			
 				<label for="lname">Delivery city or postal code</label><br>
-				<input type="text" id="lname" name="lname">
-				</form>
+				<input type="text" name="city" list="cityname">
+					<datalist id="cityname" width="100%">
+						<option value="Boston">
+						<option value="Cambridge">
+						<option value="madan">
+						<option value="davinder">
+						<option value="manorma">
+						<option value="rajwinder">
+						<option value="kuldeep">
+						<option value="aman">
+					</datalist>
+				
 				<div class="dilevery-caution">
 					<p>Requested date is subject to carrier acceptance and availability.</p>
 					<p><span><input type="checkbox" id="vehicle2" name="vehicle2" value="Car">I'd like to pickup my items carrier terminal</span></p>
@@ -122,10 +148,10 @@
 	<!-- hazardous ends here -->
 	<div class="item-dist">
 		<div class="pickup-new">
-			<form action="/action_page.php">
+		
 			<label for="lname">Item description</label><br><br>
 			<input type="text" id="lname" name="lname">
-			</form>
+			
 			<div class="pickup-caution-new">
 				<h6>e.g. "widgets" not "pallet of widgets"</h6>
 			</div>
@@ -184,4 +210,3 @@
 	</div>
 	</div>
 	@endsection
-

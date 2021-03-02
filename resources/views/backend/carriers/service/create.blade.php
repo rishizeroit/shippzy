@@ -1,11 +1,16 @@
 
-<form id="submit_service" action="{{route('carrier.submitservice')}}" method="post">
+<form id="submit_servicePrice" action="{{route('prices.store')}}" method="post">
   @csrf
   @method('POST')
   <div class="row">
     <div class="col-md-12"> 
       <div class="alert alert-danger print-error-msg" style="display:none">
         <ul></ul>
+      </div>
+    </div>
+    <div class="col-md-12"> 
+      <div class="alert alert-danger already" style="display:none">
+      <p></p>
       </div>
     </div>
     <div class="col-md-12">

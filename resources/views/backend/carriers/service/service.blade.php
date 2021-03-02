@@ -27,7 +27,7 @@
             <div class="card">
               <div class="card-header">
                 <div class="btn">
-                  <a href="{{route('carrier.addservice')}}" id="add_service" class="btn btn-primary">Add Service</a>
+                  <a href="{{route('prices.create')}}" id="add_servicePrice" class="btn btn-primary">Add Service</a>
                 </div>
               </div>
               @if (session('message'))
@@ -50,16 +50,19 @@
                   <tbody>
                     @foreach($services as $service)
                       <tr>
-                        <td>{{ucfirst($service->service[0]['name'])}}</td>
+                        <td>{{ucfirst($service->service->name)}}</td>
                         <td>$ {{$service->full_price}}</td>
                         <td>$ {{$service->load_price}}</td>
                         <td>$ {{$service->auto_price}}</td>
                         <td>
-                          <!-- <div class="btn-group"> -->
-                            <a href="{{route('carrier.editservice', $service->id)}}" class="btn btn-primary editService">Edit</a>
-                            <a type="button" href="{{route('carrier.showservice', $service->id)}}" class="btn btn-success showService">View</a>
-                            <a href="{{route('carrier.destroyservice',$service->id)}}" class="btn btn-danger deleteService">Delete</a>
-                          <!-- </div> -->
+                        <div class="btn-group">
+                            <a href="{{route('prices.edit', $service->id)}}" class="btn btn-primary editServicePrice">Edit</a>
+                            <form method="post" action="{{route('prices.destroy',$service->id)}}">
+                            @csrf                                
+                            @method('DELETE')
+                              <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                          </div>
                         </td>
                       </tr>
                     @endforeach

@@ -105,7 +105,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('carrier.service') }}" class="nav-link {{ (request()->is('carrier/service')) ? 'active' : '' }}">
+            <a href="{{ route('prices.index') }}" class="nav-link {{ (request()->is('carrier/service/prices')) ? 'active' : '' }}">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Services

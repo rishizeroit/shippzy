@@ -32,14 +32,8 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'/admin', 'middleware' => ['auth']
 });
 Route::group(['namespace'=>'Carrier', 'prefix'=>'/carrier', 'middleware' => ['auth'],], function(){
       Route::get('/dashboard', 'DashboardController@dashboard')->name('carrier.dashboard');
-      Route::get('/service', 'DashboardController@service')->name('carrier.service');
-      Route::get('/add_service', 'DashboardController@AddService')->name('carrier.addservice');
-      Route::post('/submit_service', 'DashboardController@SubmitService')->name('carrier.submitservice');
-      Route::get('/show_service/{id}', 'DashboardController@ShowService')->name('carrier.showservice');
-      Route::get('/edit_service/{id}', 'DashboardController@EditService')->name('carrier.editservice');
-      Route::post('/update_service', 'DashboardController@UpdateService')->name('carrier.update');
+      Route::resource('service/prices','ServicePriceController');
       Route::resource('/my-vehicles', 'MyVehicleController');
-      Route::get('/destroy_service/{id}','DashboardController@DestroyService')->name('carrier.destroyservice');
       Route::match(['get','post'],'/test','TestController@test')->name('test.meta');
 });
 
