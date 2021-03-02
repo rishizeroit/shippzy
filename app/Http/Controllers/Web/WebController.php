@@ -33,6 +33,11 @@ class WebController extends Controller
         return view('web.contact-us');
     }
 
+    public function why_shipzzy()
+    {
+        return view('web.why_shipzzy');
+    }
+
     public function full_truck_form()
     {
         return view('web.full_truck_form');

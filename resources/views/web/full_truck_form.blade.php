@@ -27,7 +27,24 @@
 		<div class="pickup-md">
 			<form action="/action_page.php">
 			<label for="lname">Pickup city or postal code</label><br>
-			<input type="text" id="lname" name="lname">
+			<select id="select-state" placeholder="Pick a state...">
+				<option value="">Select a state...</option>
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DE">Delaware</option>
+				<option value="DC">District of Columbia</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+			</select>
 			</form>
 			<div class="pickup-caution">
 				<p>Must be in the United State.</p>

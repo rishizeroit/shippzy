@@ -1,82 +1,6 @@
-
-<!DOCTYPE html>
-<html>
-   <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="T" />
-	<meta name="description" content="">
-	
-	<title>Why Shipzzy</title>
-	
-	<link rel="stylesheet" href="css/styler.css" />
-	<link rel="stylesheet" href="css/theme-pink.css" id="template-color" />
-	<link rel="stylesheet" href="css/jquery-ui.css">
-	<link rel="stylesheet" href="css/jquery-ui.theme.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/animate.css" />
-	<link rel="stylesheet" href="css/icons.css" />
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="images/favicon.ico" />
-	<script src="js/e808bf9397.js"></script>
-	
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  
-  <body class="">
-		<!-- Preloader -->
-		<div class="preloader">
-			<div id="followingBallsG">
-				<div id="followingBallsG_1" class="followingBallsG"></div>
-				<div id="followingBallsG_2" class="followingBallsG"></div>
-				<div id="followingBallsG_3" class="followingBallsG"></div>
-				<div id="followingBallsG_4" class="followingBallsG"></div>
-			</div>
-		</div>
-		<!-- //Preloader -->
-		
-		<!-- Header -->
-		<header class="header" role="banner">
-			<div class="wrap">
-				<!-- Logo -->
-				<div class="logo">
-					<a href="index.html" title="Transfers"><img src="images/logo.png" alt="Transfers" /></a>
-				</div>
-				<!-- //Logo -->
-				
-					<div class="form-header">
-						<input type="text" name="Search" value="Search">
-						<button type="button" class="icon-btn">icon</button>
-					</div>
-
-
-				<!-- Main Nav -->
-				<nav role="navigation" class="main-nav">
-
-					<ul>
-						<li class="active"><a href="index.html" title="">GET QUOTES</a></li>
-						<li><a href="#" title="">FREIGHT SERVICES </a></li>
-						<li><a href="#" title=""> LEARN </a></li>
-						<li><a href="#" title="">ACCOUNT</a>
-							<ul>
-								<li><a href="#" title="Post">Login</a></li>
-								<li><a href="#" title="Post">Blog</a></li>
-							</ul>
-						</li>
-
-					</ul>
-				</nav>
-				<!-- //Main Nav -->
-			</div>
-		</header>
-		<!-- //Header -->
-	
-	<!-- Main -->
+@extends('web.app.layout')
+@section('title', 'Shipzzy')
+@section('content')
 	<main class="main" role="main">
 
 		<!-- start:header -->
@@ -103,7 +27,7 @@
 				<div class="content textongrey" style="text-align: center;">
 					<h2 class="page-heading">Domestic shipping made simple</h2>					
 					<h3>An easier and more transparent platform to move LTL Freight</h3>
-					<img src="images/domestic-shipping.png">
+					<img src="{{base_url('web/images/domestic-shipping.png')}}">
 				</div>
 				<!--- //Content -->
 			</div>
@@ -187,7 +111,7 @@
 			<!-- Item -->
 			<article class="one-third wow fadeIn">
 				<figure class="featured-image">
-					<img src="images/img.jpg" alt="" />
+					<img src="{{base_url('web/images/img.jpg')}}" alt="" />
 					<div class="overlay">
 						<a href="services.html" class="expand">+</a>
 					</div>
@@ -203,7 +127,7 @@
 			<!-- Item -->
 			<article class="one-third wow fadeIn" data-wow-delay=".2s">
 				<figure class="featured-image">
-					<img src="images/img4.jpg" alt="" />
+					<img src="{{base_url('web/images/img4.jpg')}}" alt="" />
 					<div class="overlay">
 						<a href="services.html" class="expand">+</a>
 					</div>
@@ -219,7 +143,7 @@
 			<!-- Item -->
 			<article class="one-third wow fadeIn" data-wow-delay=".4s">
 				<figure class="featured-image">
-					<img src="images/img2.jpg" alt="" />
+					<img src="{{base_url('web/images/img2.jpg')}}" alt="" />
 					<div class="overlay">
 						<a href="services.html" class="expand">+</a>
 					</div>
@@ -249,74 +173,4 @@
 		<!-- //Call to action -->
 	</main>
 	<!-- //Main -->
-	
-	<!-- Footer -->
-	<footer class="footer white" role="contentinfo">
-		<div class="wrap">
-			<div class="row">
-				<!-- Column -->
-				<article class="one-half">
-					<h6>About us</h6>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-				</article>
-				<!-- //Column -->
-				
-				<!-- Column -->
-				<article class="one-fourth">
-					<h6>Need help?</h6>
-					<p>Contact us via phone or email:</p>
-					<p class="contact-data"><span class="icon icon-themeenergy_call"></span> +1 555 555 555</p>
-					<p class="contact-data"><span class="icon icon-themeenergy_mail-2"></span> <a href="mailto:help@demo.com">help@demo.com</a></p>
-				</article>
-				<!-- //Column -->
-				
-				<!-- Column -->
-				<article class="one-fourth">
-					<h6>Follow us</h6>
-					<ul class="social">
-						<li><a href="#" title="facebook"><i class="fa fa-fw fa-facebook"></i></a></li>
-						<li><a href="#" title="twitter"><i class="fa fa-fw fa-twitter"></i></a></li>
-						<li><a href="#" title="gplus"><i class="fa fa-fw fa-google-plus"></i></a></li>
-						<li><a href="#" title="linkedin"><i class="fa fa-fw fa-linkedin"></i></a></li>
-						<li><a href="#" title="pinterest"><i class="fa fa-fw fa-pinterest-p"></i></a></li>
-						<li><a href="#" title="vimeo"><i class="fa fa-fw fa-vimeo"></i></a></li>
-					</ul>
-				</article>
-				<!-- //Column -->
-			</div>
-			
-			<div class="copy">
-				<p>Copyright 2021. All rights reserved. </p>
-				
-				<nav role="navigation" class="foot-nav">
-					<ul>
-						<li><a href="#" title="Home">Home</a></li>
-						<li><a href="#" title="Blog">Blog</a></li>
-						<li><a href="#" title="About us">About us</a></li>
-						<li><a href="#" title="Contact us">Contact us</a></li>
-						<li><a href="#" title="Terms of use">Terms of use</a></li>
-						<li><a href="#" title="Help">Help</a></li>
-						<li><a href="#" title="For partners">For partners</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</footer>
-	<!-- //Footer -->
-	
-	 <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/jquery-ui-timepicker-addon.min.js"></script>
-	<script src="js/jquery.uniform.min.js"></script>
-	<script src="js/jquery.slicknav.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/jquery-ui-sliderAccess.js"></script>
-	<script src="js/search.js"></script>
-	<script src="js/scripts.js"></script>
-	
-	<!-- TEMPLATE STYLES -->
-
-  </body>
-
-</html>
+	@endsection

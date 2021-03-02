@@ -47,6 +47,7 @@ Route::group(['namespace'=>'Web', 'prefix'=>'/'], function(){
       Route::get('/', 'WebController@index');
       Route::get('/about-us', 'WebController@about');
       Route::get('/contact-us', 'WebController@contact');
+      Route::get('/why-shipzzy', 'WebController@why_shipzzy');
       Route::get('/full-truck-form', 'WebController@full_truck_form');
       Route::get('/less-truck-form', 'WebController@less_truck_form');
       Route::get('/auto-truck-form', 'WebController@auto_truck_form');
