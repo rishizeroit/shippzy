@@ -83,7 +83,7 @@ body {
 }
 
 .caution-md p span {
-    color: #0a6bff;
+    color: #e56e25;
 }
 
 
@@ -109,7 +109,7 @@ body {
     padding: 0 0 10px 0;
 }
 
-.pickup-md form input#lname {
+.pickup-md form input[type="text"]{
     border: 1px solid #08365b;
     width: 90%;
     padding: 8px;
@@ -129,7 +129,7 @@ body {
 }
 
 .pickup-caution p span {
-    color: #0a6bff;
+    color: #e56e25;
     font-size: 15px;
 }
 
@@ -143,14 +143,15 @@ body {
 }
 
 .pickup-md .pick-ser h6 span {
-    padding: 0 5px;
-    background: #106bfd;
+    padding: 1px 5px;
+    background: #e56e25;
     border-radius: 50%;
     color: #fff;
+    margin:5px;
 }
 
 .pickup-md .pick-ser h6 {
-    padding: 0;
+    padding: 4px;
     font-size: 13px;
     font-weight: normal;
     text-align: left;
@@ -192,7 +193,7 @@ body {
     padding: 0 0 10px 0;
 }
 
-.dilevery-md form input#lname {
+.dilevery-md form input[type="text"]{
     border: 1px solid #08365b;
     width: 90%;
     padding: 8px;
@@ -216,7 +217,7 @@ body {
 }
 
 .dilevery-caution p span {
-    color: #0a6bff;
+    color: #e56e25;
     font-size: 15px;
 }
 
@@ -226,14 +227,15 @@ body {
 }
 
 .dilevery-md .delivery-ser h6 span {
-    padding: 0 5px;
-    background: #106bfd;
+    padding: 1px 5px;
+    background: #e56e25;
     border-radius: 50%;
     color: #fff;
+    margin:5px;
 }
 
 .dilevery-md .delivery-ser h6 {
-    padding: 0;
+    padding: 4px;
     font-size: 13px;
     font-weight: normal;
     text-align: left;
@@ -429,7 +431,7 @@ body {
 }
 
 .hazardous-md .senstive-md h5 a {
-    color: #328cff;
+    color: #e56e25;
     text-decoration: none;
     font-size: 15px;
 }
@@ -439,7 +441,7 @@ body {
 }
 
 .hazardous-md .task-rabbit h5 a {
-    color: #328cff;
+    color: #16365b;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -572,7 +574,7 @@ body {
 /* calcu start here */
 
 .calcu-md p {
-    color: #006fc7;
+    color: #e56e25;
     margin: 15px;
 }
 

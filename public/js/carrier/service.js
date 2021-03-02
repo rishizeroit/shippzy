@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#add_service').click(function() {
+    $('#add_servicePrice').click(function() {
         event.preventDefault();
         $.ajax({
             url: $(this).attr('href'),
@@ -13,21 +13,28 @@ $(document).ready(function() {
         });
     });
 
-    $('#submit_service').on('submit', function() {
+    $('#submit_servicePrice').on('submit', function() {
         event.preventDefault();
-        var formData = $("#submit_service").serialize();
+        var formData = $("#submit_servicePrice").serialize();
         $.ajax({
             url: $(this).attr('action'),
             method: 'POST',
             data: formData,
             success: function(data) {
-                if ($.isEmptyObject(data.error)) {
-                    $('.alert-danger').html(data.success);
+                if ($.isEmptyObject(data.error) && $.isEmptyObject(data.eror)) {
+                    $(".already").find("p").html('');
+                    $(".already").css('display', 'block');
+                    $(".already").find("p").html(data.success);
                     setTimeout(function() {
                         location.reload(true);
                     }, 2000);
-                } else {
+                } else if(!$.isEmptyObject(data.error)) {
                     printErrorMsg(data.error);
+                }else
+                {
+                    $(".already").find("p").html('');
+                    $(".already").css('display', 'block');
+                    $(".already").find("p").html(data.eror);
                 }
             }
         });
@@ -41,7 +48,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.editService').click(function() {
+    $('.editServicePrice').click(function() {
         event.preventDefault();
         $.ajax({
             url: $(this).attr('href'),
@@ -57,17 +64,18 @@ $(document).ready(function() {
         $('#commonModal').hide();
     });
 
-    $('#service_update').on('submit', function() {
+    $('#servicePrice_update').on('submit', function() {
         event.preventDefault();
-        var formData = $("#service_update").serialize();
+        var formData = $("#servicePrice_update").serialize();
         $.ajax({
             url: $(this).attr('action'),
-            method: 'post',
+            method:'post',
             data: formData,
             success: function(data) {
-                console.log(data);
                 if ($.isEmptyObject(data.error)) {
-                    $('.card-title').html(data.success);
+                    $(".already").find("p").html('');
+                    $(".already").css('display', 'block');
+                    $(".already").find("p").html(data.success);
                     setTimeout(function() {
                         location.reload(true);
                     }, 2000);
@@ -87,16 +95,4 @@ $(document).ready(function() {
         }
     });
 
-    $('.showService').click(function() {
-        event.preventDefault();
-        $.ajax({
-            url: $(this).attr('href'),
-            method: 'get',
-            success: function(data) {
-                $('#commonModal').show();
-                $('#htmlData').html(data);
-                $('.modal-title').html('Additional Service');
-            }
-        });
-    });
 });
