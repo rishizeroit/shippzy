@@ -32,8 +32,8 @@
 
 							<div class="one-third">
 								 <input type="radio" id="auto-tran-input" name="transport" value="Auto" onclick="window.location='{{url('auto-truck-form')}}'">
-									<div class="bg-3-step">	  
-									   <img src="{{base_url('web/images/auto-transport-icon.png')}}">
+									<div class="bg-3-step" id="icon_home">	  
+									   <img src="{{base_url('web/images/fright-loading-icons.png')}}">
 									   <label for="other">Auto transport</label>
 									</div>
 
@@ -133,8 +133,8 @@
 		<!-- Call to action -->
 		<div class="black cta">
 			<div class="wrap">
-				<p class="wow fadeInLeft">Like what you see? Are you ready to stand out? You know what to do.</p>
-				<a href="#" class="btn huge read-more-btn right wow fadeInRight">Read More</a>
+				<p class="wow fadeInLeft">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+				
 			</div>
 		</div>
 		<!-- //Call to action -->
@@ -146,11 +146,11 @@
 				<figure class="featured-image">
 					<img src="{{base_url('web/images/img.jpg')}}" alt="" />
 					<div class="overlay">
-						<a href="services.html" class="expand">+</a>
+						<a href="{{url('why-shipzzy')}}" class="expand">Why shipzzy</a>
 					</div>
 				</figure>
 				<div class="details">
-					<h4><a href="services.html">Full truck load</a></h4>
+					<h4><a href="{{url('why-shipzzy')}}">Why shipzzy</a></h4>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 					<a class="more" title="Read more" href="services.html">Read more</a>
 				</div>
@@ -162,11 +162,11 @@
 				<figure class="featured-image">
 					<img src="{{base_url('web/images/img4.jpg')}}" alt="" />
 					<div class="overlay">
-						<a href="services.html" class="expand">+</a>
+						<a href="{{url('contact-us')}}" class="expand">Contact us</a>
 					</div>
 				</figure>
 				<div class="details">
-					<h4><a href="services.html">less then truck load</a></h4>
+					<h4><a href="{{url('contact-us')}}">Contact us</a></h4>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 					<a class="more" title="Read more" href="#">Read more</a>
 				</div>
@@ -178,11 +178,11 @@
 				<figure class="featured-image">
 					<img src="{{base_url('web/images/img2.jpg')}}" alt="" />
 					<div class="overlay">
-						<a href="services.html" class="expand">+</a>
+						<a href="{{url('full-truck-form')}}" class="expand">You have loose items? we still can help</a>
 					</div>
 				</figure>
 				<div class="details">
-					<h4><a href="services.html">auto transport</a></h4>
+					<h4><a href="{{url('full-truck-form')}}">auto transport</a></h4>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 					<a class="more" title="Read more" href="#">Read more</a>
 				</div>

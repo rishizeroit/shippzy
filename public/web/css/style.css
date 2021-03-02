@@ -599,6 +599,7 @@ h6 {
     color: #858585;
     border-radius: 0;
     position: relative;
+    font-weight: bold;
 }
 
 .main-nav ul>li.active>a,
@@ -1483,13 +1484,14 @@ h6 {
 .overlay {
     display: block;
     position: absolute;
-    top: 0;
+    top: 50%;
     bottom: 0;
     left: 0;
     right: 0;
     opacity: 0;
     -ms-opacity: 0;
     z-index: 20;
+    transform: translate(0, 0);
     background: rgba(0, 0, 0, .4);
     overflow: hidden;
     -webkit-transition: all 0.5s;
@@ -1506,9 +1508,9 @@ h6 {
     text-align: center;
     color: #fff;
     line-height: 60px;
-    font-weight: 400;
-    font-size: 30px;
-    display: block;
+    font-weight: bold;
+    font-size: 39px;
+    display: contents;
     position: absolute;
     z-index: 100;
     top: 0;
@@ -4357,7 +4359,7 @@ div.radio input {
 }
 
 .brd-widget input+.bg-3-step {
-    border: 2px solid #fff;
+    border: 2px solid #c5c5c5;
     box-shadow: inhert;
 }
 
@@ -4383,7 +4385,7 @@ div.radio input {
 }
 
 .bg-3-step {
-    background: #bdced7;
+    background: #fff;
     width: 300px;
 }
 
@@ -4595,4 +4597,13 @@ form.frm-pick-order {
     margin-right: 13px;
     height: 50px;
     font-size: 18px;
+}
+
+#icon_home {
+    height: 193px;
+    padding: 21px 0;
+}
+
+#icon_home label {
+    margin-top: 27px;
 }
