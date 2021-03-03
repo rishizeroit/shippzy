@@ -75,7 +75,6 @@
           </div>
         </div>
         </div>
-    <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
         <div class="col-md-12">
           <button class="btn btn-block btn-primary" type="submit">Submit</button>
         </div>

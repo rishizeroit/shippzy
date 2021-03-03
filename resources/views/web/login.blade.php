@@ -61,7 +61,7 @@
 								</div>
 							</div>
 							
-							<p><a href="#">Forgotten password?</a><br>Dont have an account yet? <a href="/register">Sign up</a>.</p>
+							<p><a href="#">Forgotten password?</a><br>Dont have an account yet? <a href="{{route('customer.register')}}">Sign up</a>.</p>
 						</form>
 					</div>
 					<!--//Login-->

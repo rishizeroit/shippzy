@@ -96,10 +96,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('my-vehicles.index') }}" class="nav-link {{ (request()->is('carrier/my-vehicles')) ? 'active' : '' }}">
+            <a href="{{ route('trailers.index') }}" class="nav-link {{ (request()->is('carrier/trailers')) ? 'active' : '' }}">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-                My Vehicles
+               Trailers
                 <!-- <span class="badge badge-info right">6</span> -->
               </p>
             </a>

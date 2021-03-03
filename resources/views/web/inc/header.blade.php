@@ -41,7 +41,7 @@
 						@else
 						<li><a href="#" title="">Account</a>
 							<ul>
-								<li><a href="/login" title="Post">Login</a></li>
+								<li><a href="{{route('authenticate.login')}}" title="Post">Login</a></li>
 								<li><a href="#" title="Post">Blog</a></li>
 							</ul>
 						</li>

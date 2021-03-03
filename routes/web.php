@@ -33,35 +33,35 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'/admin', 'middleware' => ['auth']
 Route::group(['namespace'=>'Carrier', 'prefix'=>'/carrier', 'middleware' => ['auth'],], function(){
       Route::get('/dashboard', 'DashboardController@dashboard')->name('carrier.dashboard');
       Route::resource('service/prices','ServicePriceController');
-      Route::resource('/my-vehicles', 'MyVehicleController');
+      Route::resource('/trailers', 'TrailerController');
       Route::match(['get','post'],'/test','TestController@test')->name('test.meta');
 });
 
 Route::group(['namespace'=>'Web', 'prefix'=>'/'], function(){
       Route::get('/', 'WebController@index');
-      Route::get('/about-us', 'WebController@about');
-      Route::get('/contact-us', 'WebController@contact');
-      Route::get('/why-shipzzy', 'WebController@why_shipzzy');
-      Route::get('/full-truck-form', 'WebController@full_truck_form');
-      Route::get('/less-truck-form', 'WebController@less_truck_form');
-      Route::get('/auto-truck-form', 'WebController@auto_truck_form');
-      Route::get('/freight-class', 'WebController@freight_class');
-      Route::get('/ltl-shipment', 'WebController@ltl_shipment');
-      Route::get('/liftgate', 'WebController@liftgate');
-      Route::get('/ftl-shipment', 'WebController@ftl_shipment');
-      Route::get('/partial-shipment', 'WebController@partial_shipment');
-      Route::get('/volume-shipment', 'WebController@volume_shipment');
-      Route::get('/trailer-types', 'WebController@trailer_types');
-      Route::get('/limited-access', 'WebController@limited_access');
-      Route::get('/pallet-skid', 'WebController@pallet_skid');
+      Route::get('about-us', 'WebController@about');
+      Route::get('contact-us', 'WebController@contact');
+      Route::get('why-shipzzy', 'WebController@why_shipzzy');
+      Route::get('full-truck-form', 'WebController@full_truck_form');
+      Route::get('less-truck-form', 'WebController@less_truck_form');
+      Route::get('auto-truck-form', 'WebController@auto_truck_form');
+      Route::get('freight-class', 'WebController@freight_class');
+      Route::get('ltl-shipment', 'WebController@ltl_shipment');
+      Route::get('liftgate', 'WebController@liftgate');
+      Route::get('ftl-shipment', 'WebController@ftl_shipment');
+      Route::get('partial-shipment', 'WebController@partial_shipment');
+      Route::get('volume-shipment', 'WebController@volume_shipment');
+      Route::get('trailer-types', 'WebController@trailer_types');
+      Route::get('limited-access', 'WebController@limited_access');
+      Route::get('pallet-skid', 'WebController@pallet_skid');
       Route::match(['GET','POST'],'login', 'WebController@login')->name('authenticate.login');
       Route::match(['GET','POST'],'register', 'WebController@register')->name('customer.register');
-      Route::get('/email-verify/{id}', 'WebController@emailVerify')->name('email.verify');
-      Route::get('/logout', 'WebController@logout');
+      Route::get('email-verify/{id}', 'WebController@emailVerify')->name('email.verify');
+      Route::get('logout', 'WebController@logout');
 
-      Route::get('/test', 'WebController@test'); 
-      Route::get('/getcountry', 'WebController@getCountry'); 
-      Route::post('/book', 'WebController@book')->name('freights.book');
+      Route::get('test', 'WebController@test'); 
+      Route::get('getcountry', 'WebController@getCountry'); 
+      Route::post('book', 'WebController@book')->name('freights.book');
       // Route::post('/book/free-quote', 'WebController@freeQuote')->name('book.freeQuote');
       // Route::post('/book/free-quote/services', 'WebController@addServices')->name('add.services');   
 });

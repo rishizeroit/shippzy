@@ -58,7 +58,7 @@
 					<div class="one-third wow fadeIn">
 						<a href="{{url('ltl-shipment')}}"><span class="circle"><span class="icon fa fa-truck"></span></span></a>
 						<h3><a href="{{url('ltl-shipment')}}">Meaning of LTL shipment</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+						<p>Less than truckload freight shipping (LTL) is used for the transportation of small freight....<a href="/ltl-shipment">Read more</a></p>
 					</div>
 					<!-- //Item -->
 					
@@ -66,7 +66,7 @@
 					<div class="one-third wow fadeIn" data-wow-delay=".2s">
 						<a href="{{url('ftl-shipment')}}"><span class="circle"><span class="icon fas fa-truck-moving"></span></span></a>
 						<h3><a href="{{url('ftl-shipment')}}">Meaning of FTL shipment</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+						<p>Full truckload is a mode of freight for larger shipments that typically occupy more than....<a href="/ftl-shipment">Read more</a></p>
 					</div>
 					<!-- //Item -->
 					
@@ -74,7 +74,7 @@
 					<div class="one-third wow fadeIn" data-wow-delay=".4s">
 						<a href="{{url('volume-shipment')}}"><span class="circle"><span class="icon fas fa-truck-loading"></span></span></a>
 						<h3><a href="{{url('volume-shipment')}}">Meaning of Volume LTL shipment</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+						<p>Volume LTL is method of shipping that leverages under-utilized trailer space in a less....<a href="/volume-shipment">Read more</a></p>
 					</div>
 					<!-- //Item -->
 					
@@ -82,7 +82,7 @@
 					<div class="one-third wow fadeIn">
 						<a href="{{url('partial-shipment')}}"><span class="circle"><span class="icon icon-themeenergy_heart"></span></span></a>
 						<h3><a href="{{url('partial-shipment')}}">Meaning of partial shipment</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+						<p>A partial truckload shipment is a type of shipment where you only take up part of the....<a href="/partial-shipment">Read more</a></p>
 					</div>
 					<!-- //Item -->
 					
@@ -90,7 +90,7 @@
 					<div class="one-third wow fadeIn" data-wow-delay=".2s">
 						<a href="{{url('limited-access')}}"><span class="circle"><span class="icon fal fa-truck-moving"></span></span></a>
 						<h3><a href="{{url('limited-access')}}">What is considered Limited Access</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+						<p>Limited access charges were created to compensate LTL carriers for additional time....<a href="/limited-access">Read more</a></p>
 					</div>
 					<!-- //Item -->
 					
@@ -98,7 +98,7 @@
 					<div class="one-third wow fadeIn" data-wow-delay=".4s">
 						<a href="{{url('freight-class')}}"><span class="circle"><span class="icon far fa-truck-container"></span></span></a>
 						<h3><a href="{{url('freight-class')}}">Freight Class for LTL Shipping Explained</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+						<p>The National Motor Freight Traffic Association (NMFTA) defines a class as a way “to....<a href="/freight-class">Read more</a></p>
 					</div>
 					<!-- //Item -->
 					
@@ -106,7 +106,7 @@
 					<div class="one-third wow fadeIn">
 					<a href="{{url('trailer-types')}}"><span class="circle"><span class="icon fas fa-hand-peace"></span></span></a>
 						<h3><a href="{{url('trailer-types')}}">Trailer types and dimensions</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+						<p>We have a wide variety of trailer types and trailer widths to transport many different types of....<a href="/trailer-types">Read more</a></p>
 					</div>
 					<!-- //Item -->
 					
@@ -114,7 +114,7 @@
 					<div class="one-third wow fadeIn" data-wow-delay=".2s">
 						<a href="{{url('liftgate')}}"><span class="circle"><span class="icon fad fa-truck-loading"></span></span></a>
 						<h3><a href="{{url('liftgate')}}">Liftgate limitation</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+						<p>If you do need a liftgate, there are a few parameters you must be aware of. Most liftgates....<a href="/liftgate">Read more</a></p>
 					</div>
 					<!-- //Item -->
 					
@@ -122,7 +122,7 @@
 					<div class="one-third wow fadeIn" data-wow-delay=".4s">
 						<a href="{{url('pallet-skid')}}"><span class="circle"><span class="icon icon-themeenergy_stars"></span></span></a>
 						<h3><a href="{{url('pallet-skid')}}">What's the Difference Between a Pallet, Skid and Crate?</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+						<p>Preparing your packages for shipping is an essential part of....<a href="/pallet-skid">Read more</a></p>
 					</div>
 					<!-- //Item -->
 				</div>
@@ -151,8 +151,8 @@
 				</figure>
 				<div class="details">
 					<h4><a href="{{url('why-shipzzy')}}">Why shipzzy</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					<a class="more" title="Read more" href="services.html">Read more</a>
+					<p>Quote, book, track, and manage all your shipments without picking up the phone or sending an email.</p>
+					<a class="more" title="Read more" href="{{url('why-shipzzy')}}">Read more</a>
 				</div>
 			</article>
 			<!-- //Item -->
@@ -168,7 +168,7 @@
 				<div class="details">
 					<h4><a href="{{url('contact-us')}}">Contact us</a></h4>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					<a class="more" title="Read more" href="#">Read more</a>
+					<a class="more" title="Read more" href="{{url('contact-us')}}">Read more</a>
 				</div>
 			</article>
 			<!-- //Item -->
@@ -184,7 +184,7 @@
 				<div class="details">
 					<h4><a href="{{url('full-truck-form')}}">auto transport</a></h4>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					<a class="more" title="Read more" href="#">Read more</a>
+					<a class="more" title="Read more" href="{{url('full-truck-form')}}">Read more</a>
 				</div>
 			</article>
 			<!-- //Item -->

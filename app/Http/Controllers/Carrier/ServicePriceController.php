@@ -31,7 +31,7 @@ class ServicePriceController extends Controller
     public function store(Request $request)
     {
         $validator =Validator::make($request->all(),[
-                'service_id'  => 'required',
+                'service_id' => 'required',
                 'full_price' => 'required',
                 'load_price' => 'required',
                 'auto_price' => 'required',
@@ -48,7 +48,7 @@ class ServicePriceController extends Controller
                     'full_price'   => $request->full_price,
                     'load_price'   => $request->load_price,
                     'auto_price'   => $request->auto_price,
-                    'user_id'      => $request->user_id,
+                    'user_id'      => Auth::user()->id,
                 ]);
                 return response()->json(['success' => 'Service Added Successfully']);
              }

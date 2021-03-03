@@ -7,7 +7,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>My Vehicles</h1>
+            <h1>Trailers</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -27,7 +27,7 @@
             <div class="card">
               <div class="card-header">
                 <div class="btn">
-                  <a href="{{route('my-vehicles.create')}}" id="add_carrier" class="btn btn-primary">Add Carrier</a>
+                  <a href="{{route('trailers.create')}}" id="add_trailer" class="btn btn-primary">Add Trailer</a>
                 </div>
               </div>
               @if (session('message'))
@@ -37,51 +37,46 @@
               @endif
               <!-- /.card-header -->
               <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="customer" class="table table-bordered table-striped">
                   <thead>
                   <tr>
+                    <th>Type</th>
                     <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
+                    <th>Trailer No</th>
+                    <th>Frieght Weight</th>
                     <th>Status</th>
-                    <th>User Since</th>
                     <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
-                    @foreach($vehicles as $vehicle)
+                    @foreach($trailers as $trailer)
                       <tr>
-                        <td>{{ucfirst($vehicle->name)}}</td>
+                        <td>{{strtoupper($trailer->type)}}</td>
+                        <td>{{ucfirst($trailer->name)}}</td>
+                        <td>{{$trailer->trailer_no}}</td>
+                        <td>{{$trailer->frieght_weight}} lbs</td>
                         <td>
-                          @if($vehicle->status == 1)
+                          @if($trailer->status == 1)
                             <span><a class="btn btn-success" href="javascript:void(0)">Active</a></span>
                           @else
                             <span><a class="btn btn-danger" href="javascript:void(0)">In Active</a></span>
                           @endif
                         </td>
                         <td>
-                          <div class="btn-group">
-                            <a href="{{route('my-vehicles.edit', $vehicle->id)}}" class="btn btn-primary editCarrier">Edit</a>
-                            <a type="button" href="{{route('my-vehicles.show', $vehicle->id)}}" class="btn btn-success showCarrier">View</a>
-                            <form method="post" action="{{route('my-vehicles.destroy', $vehicle->id)}}">
-                            @csrf                                
-                            @method('DELETE')
-                              <button type="submit" class="btn btn-danger">Delete</button>
+                        <div class="btn-group">
+                            <a href="{{route('trailers.edit', $trailer->id)}}" class="btn btn-primary editTrailer">Edit</a>
+                            <a type="button" href="{{route('trailers.show', $trailer->id)}}" class="btn btn-success showTrailer">View</a>
+                            <form method="post" action="{{route('trailers.destroy', $trailer->id)}}">
+                                @csrf                                
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">Delete</button>
                             </form>
-                          </div>
+                        </div> 
                         </td>
                       </tr>
                     @endforeach
                   </tbody>
-                  <tfoot>
-                  <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Status</th>
-                    <th>User Since</th>
-                  </tr>
-                  </tfoot>
+                
                 </table>
               </div>
               <!-- /.card-body -->
@@ -105,13 +100,18 @@
 @push('scripts')
 <script src="{{base_url('admin/plugins/datatables/jquery.dataTables.min.js')}}"></script>
 <script src="{{base_url('admin/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
-<script src="{{base_url('js/carrier/carrier.js')}}"></script>
+<script src="{{base_url('js/carrier/trailer.js')}}"></script>
 <script>
   $(function () {
-    $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $("#customer").DataTable({
+      "responsive": true, "lengthChange": false, 
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"],
+    "autoWidth": false,
+    "columnDefs": [
+      { "width": "60px", "targets": 3 },
+       { "width": "100px", "targets": 4 },
+    ],
+    });
   });
 </script>
 @endpush
