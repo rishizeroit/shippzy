@@ -13,6 +13,7 @@ use Hash;
 use DB;
 use App\Models\Customer;
 use App\Models\User;
+use App\Models\Contact;
 use App\Models\Country;
 
 class WebController extends Controller
@@ -28,9 +29,28 @@ class WebController extends Controller
         return view('web.about');
     }
 
-    public function contact()
+    public function contact(Request $request)
     {
-        return view('web.contact-us');
+        if($request->isMethod('POST')){
+            $validator =Validator::make($request->all(),[
+                'name'    => 'required|min:3',
+                'email'   => 'required',
+                'phone'   => 'required|min:10',
+            ]);
+            if($validator->fails()){
+                return response()->json(['error'=>$validator->errors()->all()]);
+            }  
+                $contact = Contact::create([
+                    'name'    => $request->name,
+                    'email'   => $request->email,
+                    'phone'   => $request->phone,
+                    'message' => $request->message,
+                ]);
+              
+                return response()->json(['success' => 'Thanks for your interest. we will contact you soon']);
+        }else{
+            return view('web.contact-us');
+        } 
     }
 
     public function why_shipzzy()

@@ -40,7 +40,7 @@ Route::group(['namespace'=>'Carrier', 'prefix'=>'/carrier', 'middleware' => ['au
 Route::group(['namespace'=>'Web', 'prefix'=>'/'], function(){
       Route::get('/', 'WebController@index');
       Route::get('about-us', 'WebController@about');
-      Route::get('contact-us', 'WebController@contact');
+      Route::match(['get','post'],'contact-us', 'WebController@contact')->name('contact.us');
       Route::get('why-shipzzy', 'WebController@why_shipzzy');
       Route::get('full-truck-form', 'WebController@full_truck_form');
       Route::get('less-truck-form', 'WebController@less_truck_form');

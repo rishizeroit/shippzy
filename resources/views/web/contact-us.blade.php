@@ -31,23 +31,33 @@
 				</div>
 				<!--- //Content -->
 			</div>	
-
-
+			<div class="alert alert-danger print-error-msg" style="display:none">
+				<ul></ul> 
+			</div>
+			<div class="alert alert-danger success" style="display:none">
+				<p></p> 
+			</div>
 			<div class="row">
-
-
 				<div class="one-half">
 
-					<form method="post" action="contact_form_message.php" name="contactform" id="contactform">
+					<form method="post" id="contactForm" action="{{route('contact.us')}}" name="contactform">
+						@csrf
+						@method('post')
 						<div id="message"></div>
 						<div class="f-row">
 							<div class="one-half">
 								<label for="name">Name and surname</label>
-								<input type="text" id="name">
+								<input type="text" name="name" id="name">
 							</div>
 							<div class="one-half">
-								<label for="email">Email address</label>
-								<input type="email" id="email">
+								<label for="phone">Phone</label>
+								<input type="text" name="phone" id="phone">
+							</div>
+						</div>
+						<div class="f-row">
+							<div class="full-width">
+							<label for="email">Email address</label>
+								<input type="email" name="email" id="email">
 							</div>
 						</div>
 						<div class="f-row">
@@ -57,7 +67,7 @@
 							</div>
 						</div>
 						<div class="f-row">
-							<input type="submit" value="Submit" id="submit" name="submit" class="btn color medium right">
+							<button type="submit" name="submit" class="btn color medium right">Submit</button>
 						</div>
 					</form>
 
@@ -104,4 +114,7 @@
 		<!-- //Call to action -->
 	</main>
 	<!-- //Main -->
-	@endsection
+@endsection
+@push('scripts')
+<script src="{{base_url('js/front/customer.js')}}"></script>
+@endpush
