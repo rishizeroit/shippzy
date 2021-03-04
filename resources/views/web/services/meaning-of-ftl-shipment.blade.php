@@ -6,7 +6,7 @@
 <main class="main" role="main">
 
     <!-- Intro -->
-    <div class="intro" style="background:url({{base_url('web/images/about-media.jpg')}}) no-repeat 0 0; height: 571px; min-height: 571px;">
+    <div class="intro" style="background:url({{base_url('web/images/about-media.jpg')}}) no-repeat 0 0; height: 380px; min-height: 380px;">
         <div class="wrap">
             <div class="textwidget">
                 <div class="txt-about">Meaning of FTL shipment</div>
@@ -25,22 +25,36 @@
                 <h2>Meaning of FTL shipment</h2>
                 <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text
                     by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                <h2>Benefits of LTL shipping.</h2>
+                
+                 <h2>Benefits of truckload shipping.</h2>
                 <ul>
-                    <li><strong>Reduces costs:</strong> When booking an LTL shipment, you only pay for the portion of the trailer used. The rest of the cost is covered by the other occupants of the trailer’s space.&nbsp;</li>
-                    <li><strong>Increases security:</strong> Most LTL shipments are packaged onto <a href="/how-to-ship-freight/pallet-shipping/">pallets</a> before being loaded onto a truck. One well-packaged pallet has a better chance of remaining secure
-                        than shipments with multiple smaller handling units.</li>
-                    <li><strong>Additional service options:</strong> When shipping via LTL, you gain access to special services like liftgates and inside pickup and delivery.</li>
-                    <li><strong>Tracking:</strong> LTL carriers offer tracking capabilities through the <a href="/how-to-ship-freight/bill-of-lading/">bill of lading</a> number, PRO number, PO number, shipment reference number and pick up date range, to name
-                        a few.&nbsp;</li>
+                    <li><strong>Faster transit times:</strong> Goods that are shipped via full truckload generally arrive at their destination quicker than goods that are shipped via LTL’s hub-and-spoke model.&nbsp;</li>
+                    <li><strong>Less chance of damage:</strong> Full truckload shipments are generally less susceptible to damages as they are handled less times than LTL shipments.</li>
+                    <li><strong>Rates:</strong> If shipments are large enough to require the entire use of a trailer’s space, it could be more cost effective than booking multiple LTL shipments.</li>
                 </ul>
-                <h2>When to choose LTL shipping.</h2>
+                
+                 <h2>Truckload shipping best practices.</h2>
                 <ul>
-                    <li>LTL shipping is ideal for businesses who have freight under 15,000 pounds and do not require a full trailer.</li>
-                    <li>Consider LTL when looking to maximize cost savings.</li>
+                    <li><strong>Be informed:</strong> Shippers should conduct research to understand the supply and demand of truckload equipment and how it impacts rates.&nbsp;</li>
+                    <li><strong>Be consistent:</strong> Shipping the same amount of freight, on a regular schedule, to the same locations, could help you to secure consistent capacity.</li>
+                    <li><strong>Be flexible:</strong> Shippers that plan ahead and leave time for their shipments to fit a carrier’s schedule could realize cost savings.</li>
+                     <li><strong>Be efficient:</strong> Packaging shipments so they are loaded and unloaded easily will improve efficiency and productivity.</li>
                 </ul>
-
-
+                
+                <h2>Types of truckload equipment.</h2>
+                <ul>
+                    <li><strong>Dry van:</strong> Typically used to move dry goods that are not temperature-sensitive.&nbsp;</li>
+                    <li><strong>Flatbed:</strong> This trailer does not have walls and is typically used for shipments that can’t be loaded through trailer doors.</li>
+                    <li><strong>Refrigerated:</strong> The equipment used for these shipments keeps freight at your desired temperature.</li>
+                </ul>
+                
+                 <h2>Common truckload shipping questions.</h2>
+                <ul>
+                    <li><strong>How does full truckload work?</strong> Full truckload is chosen for large shipments that fill an entire trailer, time sensitive freight and when the weight of the goods make it more cost effective than LTL.&nbsp;</li>
+                    <li><strong>Why is full truckload faster?</strong> Full truckload freight is sent directly to its destination (vs. routing through a hub system), which results in shorter transit time.</li>
+                    <li><strong>What’s the difference between LTL and full truckload?</strong> Freight that does not require the entire space of a truck is known as LTL shipping, whereas full truckload (FTL) shipments take up the space or weight limit of an entire trailer.</li>
+                </ul>
+              
 
             </div>
             <!--- //Content -->

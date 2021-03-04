@@ -2,11 +2,12 @@
 @section('title', 'Shipzzy')
 @section('content')
 
+<
 <!-- Main -->
 <main class="main" role="main">
 
     <!-- Intro -->
-    <div class="intro" style="background:url({{base_url('web/images/about-media.jpg')}}) no-repeat 0 0; height: 571px; min-height: 571px;">
+    <div class="intro" style="background:url({{base_url('web/images/about-media.jpg')}}) no-repeat 0 0; height: 380px; min-height: 380px;">
         <div class="wrap">
             <div class="textwidget">
                 <div class="txt-about">Meaning of LTL shipment</div>
@@ -41,6 +42,35 @@
                 </ul>
 
 
+		<h2>Factors that determine LTL shipping rates.</h2>
+                <ul>
+                    <li><strong>Location:</strong> Generally, the further the distance, the higher the price. &nbsp;</li>
+                    <li><strong>Dimensions:</strong> The dimensions and weight of the shipment help determine the freight class, which directly impacts rates. </li>
+                    <li><strong>Mode:</strong> LTL shipments can be expedited, typically for an additional fee.</li>
+                    <li><strong>Type:</strong> A shipment that requires special handling or equipment (perishables, fragile, hazardous items) will likely lead to higher costs. &nbsp;</li>
+                </ul>
+                
+                <h2>Preparing LTL shipments.</h2>
+                <ul>
+                    <li><strong>Dimensions:</strong> Round up to the next inch when measuring the length, width and height of a shipment. Accurate dimensions are critical for carriers to maximize their capacity and for you to avoid adjustment fees.&nbsp;</li>
+                    <li><strong>Documentation:</strong> The bill of lading should be completed as accurately as possible to give to the carriers when they arrive. This document acts as a receipt for the goods that are being shipped.</li>
+                    <li><strong>Packaging and labeling:</strong> Load goods onto pallets to condense and protect your shipments. Heavy items should be placed on the bottom of pallets or crates and a label should be placed on the side.</li>
+                </ul>
+                
+                 <h2>Additional LTL shipping services.</h2>
+                <ul>
+                    <li><strong>Expedited:</strong> When you need goods to arrive at their destination more quickly than the standard transit time, request an expedited freight quote.&nbsp;</li>
+                    <li><strong>Liftgate:</strong> Used when freight exceeds 100 pounds and the receiving location does not have a dock for the shipment to be moved directly off the truck.</li>
+                    <li><strong>Limited access:</strong> This service is required for deliveries heading to locations that have limited access for carriers, such as construction sites, camps, rural locations, strip malls, etc.</li>
+                     <li><strong>Inside pickup and delivery:</strong> If the carrier needs to enter the building to obtain the freight to load or complete a delivery by bringing it indoors, you will need to ask for this service.</li>
+                </ul>
+                
+                <h2>Common LTL shipping questions.</h2>
+                <ul>
+                    <li><strong>How does LTL work?</strong> LTL shipping essentially operates on a hub and spoke model where local terminals are the spokes and larger central terminals are the hubs or distribution centers.&nbsp;</li>
+                    <li><strong>What’s the difference between LTL and FTL?</strong> Freight that does not require the entire space of a truck is known as LTL shipping, whereas full truckload shipments take up the space or weight limit of an entire trailer.</li>
+                    <li><strong>Should I ship parcel or LTL?</strong> If you are shipping over 150 pounds, consider LTL. Shipping LTL with a freight service provider means competitive rates and expert advice.</li>
+                </ul>
 
             </div>
             <!--- //Content -->
@@ -77,6 +107,7 @@
             <!--- //Sidebar -->
         </div>
     </div>
+
 
     @include('web.inc.common')
 </main>

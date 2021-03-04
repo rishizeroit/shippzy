@@ -6,7 +6,7 @@
 <main class="main" role="main">
 
     <!-- Intro -->
-    <div class="intro" style="background:url({{base_url('web/images/about-media.jpg')}}) no-repeat 0 0; height: 571px; min-height: 571px;">
+    <div class="intro" style="background:url({{base_url('web/images/about-media.jpg')}}) no-repeat 0 0; height: 380px; min-height: 380px;">
         <div class="wrap">
             <div class="textwidget">
                 <div class="txt-about">Meaning of Volume LTL shipment</div>
@@ -25,20 +25,20 @@
                 <h2>Meaning of Volume LTL shipment</h2>
                 <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text
                     by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                <h2>Benefits of LTL shipping.</h2>
+                
+                <h2>What are the benefits (and limitations) of Volume LTL for shippers?</h2>
                 <ul>
-                    <li><strong>Reduces costs:</strong> When booking an LTL shipment, you only pay for the portion of the trailer used. The rest of the cost is covered by the other occupants of the trailer’s space.&nbsp;</li>
-                    <li><strong>Increases security:</strong> Most LTL shipments are packaged onto <a href="/how-to-ship-freight/pallet-shipping/">pallets</a> before being loaded onto a truck. One well-packaged pallet has a better chance of remaining secure
-                        than shipments with multiple smaller handling units.</li>
-                    <li><strong>Additional service options:</strong> When shipping via LTL, you gain access to special services like liftgates and inside pickup and delivery.</li>
-                    <li><strong>Tracking:</strong> LTL carriers offer tracking capabilities through the <a href="/how-to-ship-freight/bill-of-lading/">bill of lading</a> number, PRO number, PO number, shipment reference number and pick up date range, to name
-                        a few.&nbsp;</li>
+                    <li><strong>It’s cheaper (obviously).</strong>  Moving larger LTL shipments via Volume LTL is usually less expensive than traditional LTL or full truckload. Why? Efficiency is the key to operating intricate LTL networks.&nbsp;</li>
+                    <li><strong>It’s safer.</strong> Volume LTL shipments often stay on the same trailer from pick-up to delivery. Since freight is not usually handled as much as standard LTL during transit, it can reduce the likelihood of damaged product.</li>
+                    <li><strong>It adds capacity.</strong> By leveraging LTL carriers’ empty backhauls, shippers are in effect tapping into a different capacity pool.</li>
+                    <li><strong>It can be slower.</strong> As discussed above, precise planning for larger LTL shipments can be tricky.&nbsp;</li>
                 </ul>
-                <h2>When to choose LTL shipping.</h2>
+                
+                <h2>What is Volume LTL?</h2>
                 <ul>
-                    <li>LTL shipping is ideal for businesses who have freight under 15,000 pounds and do not require a full trailer.</li>
-                    <li>Consider LTL when looking to maximize cost savings.</li>
+                    <li>Volume LTL is method of shipping that leverages under-utilized trailer space in a less than truckload (LTL) carrier’s network. It’s ideal for shipments that have too many pallets for standard LTL shipping, but not quite enough to require a full truck.</li>
                 </ul>
+
 
 
 

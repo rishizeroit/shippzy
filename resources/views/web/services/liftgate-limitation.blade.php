@@ -6,7 +6,7 @@
 <main class="main" role="main">
 
     <!-- Intro -->
-    <div class="intro" style="background:url({{base_url('web/images/about-media.jpg')}}) no-repeat 0 0; height: 571px; min-height: 571px;">
+    <div class="intro" style="background:url({{base_url('web/images/about-media.jpg')}}) no-repeat 0 0; height: 380px; min-height: 380px;">
         <div class="wrap">
             <div class="textwidget">
                 <div class="txt-about">Liftgate Limitation</div>
@@ -25,22 +25,22 @@
                 <h2>Liftgate Limitation</h2>
                 <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text
                     by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                <h2>Benefits of LTL shipping.</h2>
-                <ul>
-                    <li><strong>Reduces costs:</strong> When booking an LTL shipment, you only pay for the portion of the trailer used. The rest of the cost is covered by the other occupants of the trailer’s space.&nbsp;</li>
-                    <li><strong>Increases security:</strong> Most LTL shipments are packaged onto <a href="/how-to-ship-freight/pallet-shipping/">pallets</a> before being loaded onto a truck. One well-packaged pallet has a better chance of remaining secure
-                        than shipments with multiple smaller handling units.</li>
-                    <li><strong>Additional service options:</strong> When shipping via LTL, you gain access to special services like liftgates and inside pickup and delivery.</li>
-                    <li><strong>Tracking:</strong> LTL carriers offer tracking capabilities through the <a href="/how-to-ship-freight/bill-of-lading/">bill of lading</a> number, PRO number, PO number, shipment reference number and pick up date range, to name
-                        a few.&nbsp;</li>
-                </ul>
-                <h2>When to choose LTL shipping.</h2>
-                <ul>
-                    <li>LTL shipping is ideal for businesses who have freight under 15,000 pounds and do not require a full trailer.</li>
-                    <li>Consider LTL when looking to maximize cost savings.</li>
-                </ul>
-
-
+                <h2>What is a Liftgate?</h2>
+                <p>Simply put, a liftgate is a lift device installed on the back of a truck, designed to assist the raising and lowering of freight from the back of the truck to the ground, and vice versa. Liftgates are not present on all trucks, so if one is needed, special arrangements must be made before the freight is scheduled to pickup or deliver.</p>
+                
+                 <h2>Are Liftgates complimentary?</h2>
+                <p>Most of the time, liftgates are not complimentary. There are occasional freight carriers that offer the service as part of a FAK, or some other agreement between broker and carrier, but this is not the norm. There are two separate charges for using a liftgate at both pickup and delivery.</p>
+                
+                 <h2>When are Liftgates needed?</h2>
+                <p>Liftgates are most often used in the absence of a shipping dock, or forklift. Because of this, the majority of residential deliveries require a liftgate. There are other instances of liftgate use as well, but generally speaking, residential pickups and deliveries will always require a liftgate. If a liftgate is not employed during residential shipping, the shipper or consignee will most likely be charged additional hand-unloading fees by the freight carrier</p>
+                
+                   <h2>What are the limitations of a Liftgate?</h2>
+                <p>If you do need a liftgate, there are a few parameters you must be aware of. Most liftgates can handle freight that is equal to or less than 96 inches wide, and 48 inches deep. This means that standard-sized pallets can easily be used with a liftgate. The weight limit on a standard liftgate is 2500 lbs. </p>
+                
+                   <h2>Pallet jacks, forklifts, and other miscellaneous items</h2>
+                <p>A pallet jack is used to move the freight from the back of the truck to the liftgate. In rare instances, a pallet jack can also be used to move the freight once it’s been removed from the truck, though there is often an additional charge associated with this action. Forklifts often act as a way to avoid a liftgate if a loading dock is not available. Forklifts are most often used at construction sites and other outside locations where a dock is not feasible. </p>
+                
+               
 
             </div>
             <!--- //Content -->

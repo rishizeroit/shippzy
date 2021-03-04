@@ -1,12 +1,11 @@
 @extends('web.app.layout')
 @section('title', 'Shipzzy')
 @section('content')
-
 <!-- Main -->
 <main class="main" role="main">
 
     <!-- Intro -->
-    <div class="intro" style="background:url({{base_url('web/images/about-media.jpg')}}) no-repeat 0 0; height: 571px; min-height: 571px;">
+    <div class="intro" style="background:url({{base_url('web/images/about-media.jpg')}}) no-repeat 0 0; height: 380px; min-height: 380px;">
         <div class="wrap">
             <div class="textwidget">
                 <div class="txt-about">Trailer types and dimensions</div>
@@ -23,24 +22,18 @@
             <!--- Content -->
             <div class="content three-fourth textongrey mrg-top-40">
                 <h2>Trailer types and dimensions</h2>
-                <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text
-                    by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                <h2>Benefits of LTL shipping.</h2>
-                <ul>
-                    <li><strong>Reduces costs:</strong> When booking an LTL shipment, you only pay for the portion of the trailer used. The rest of the cost is covered by the other occupants of the trailer’s space.&nbsp;</li>
-                    <li><strong>Increases security:</strong> Most LTL shipments are packaged onto <a href="/how-to-ship-freight/pallet-shipping/">pallets</a> before being loaded onto a truck. One well-packaged pallet has a better chance of remaining secure
-                        than shipments with multiple smaller handling units.</li>
-                    <li><strong>Additional service options:</strong> When shipping via LTL, you gain access to special services like liftgates and inside pickup and delivery.</li>
-                    <li><strong>Tracking:</strong> LTL carriers offer tracking capabilities through the <a href="/how-to-ship-freight/bill-of-lading/">bill of lading</a> number, PRO number, PO number, shipment reference number and pick up date range, to name
-                        a few.&nbsp;</li>
-                </ul>
-                <h2>When to choose LTL shipping.</h2>
-                <ul>
-                    <li>LTL shipping is ideal for businesses who have freight under 15,000 pounds and do not require a full trailer.</li>
-                    <li>Consider LTL when looking to maximize cost savings.</li>
-                </ul>
-
-
+                <p>We have a wide variety of trailer types and trailer widths to transport many different types of cargo. Each trailer type is suitable for a specific purpose, for example standard-sized or out-of-gauge cargo.</p>
+                
+                <h2>Do you have GPS tracking on trailers?</h2>
+                <p>Whether we use reefer trailers, mega trailers or curtain trailers we can always keep track of your cargo. We have installed GPS (Global Positioning System) devices on trailers in our fleet. This enables us to keep an overview of your cargo everywhere it goes. It also helps protect your cargo against theft.</p>
+                
+                
+                <h2>Trailer sizes and dimensions for our trailer types</h2>
+                <p>Click on the links below to see illustrations of our different trailers and their sizes and dimensions. The dimensions, sizes, and capacity of the various trailers of our fleet vary depending on manufacturer and production year.</p>
+                
+	 <h2>What is Ultra-seal?</h2>
+                <p>DSV injects Ultra-seal into all trailer tires to prevent punctures. This both improves road safety and increases the punctuality of our deliveries as a result.</p>
+                <p>Because Ultra-seal also helps to maintain the correct tire pressure, tire wear is minimized and fuel consumption is reduced, so the environmental impact of the transportation is kept to a minimum.</p>
 
             </div>
             <!--- //Content -->
@@ -77,7 +70,6 @@
             <!--- //Sidebar -->
         </div>
     </div>
-
     @include('web.inc.common')
 </main>
 @endsection

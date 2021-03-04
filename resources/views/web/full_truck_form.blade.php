@@ -27,7 +27,6 @@
 		<div class="pickup-md">
 		
 			<label for="lname">Pickup city or postal code</label><br>
-<<<<<<< HEAD
 			<select id="select-state" placeholder="Pick a state...">
 				<option value="">Select a state...</option>
 				<option value="AL">Alabama</option>
@@ -47,7 +46,6 @@
 				<option value="IN">Indiana</option>
 			</select>
 			</form>
-=======
 				<input type="text" name="city" list="cityname">
 					<datalist id="cityname" width="100%">
 						<option value="Boston">
@@ -61,7 +59,6 @@
 					</datalist>
 
 		
->>>>>>> b8cd3b8209d00bed052b6806ec049c1f3798f0f2
 			<div class="pickup-caution">
 				<p>Must be in the United State.</p>
 				<p><span><input type="checkbox" id="vehicle2" name="vehicle2" value="Car">I'd like to drop off my items at a carrier terminal</span></p>

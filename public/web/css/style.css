@@ -4607,3 +4607,372 @@ form.frm-pick-order {
 #icon_home label {
     margin-top: 27px;
 }
+
+
+/*-- start:form --*/
+
+.shipment-instant-quotes-widget {
+    background: #f5f5f5;
+}
+
+.shipment-instant-quotes-widget .tell-quot-txt {
+    color: #234986;
+    text-align: center;
+    font-size: 29px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.shipment-instant-quotes-widget .tell-quot-txt span {
+    color: #eb6e32;
+}
+
+.shipment-instant-quotes-widget label.dep-heading {
+    display: block;
+    color: #234986;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0px 0 9px 0;
+}
+
+.shipment-instant-quotes-widget .value-data {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #234986;
+    border-radius: 0px;
+}
+
+.shipment-instant-quotes-widget .valid-test {
+    color: #666;
+    font-size: 15px;
+    padding: 12px 0 9px 0;
+}
+
+.shipment-instant-quotes-widget .caution-line {
+    color: #234986;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.shipment-instant-quotes-widget .caution-line i.fas {
+    color: #e8af01;
+    font-size: 16px;
+}
+
+.shipment-instant-quotes-widget .pickup-lt {
+    color: #234986;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+}
+
+.shipment-instant-quotes-widget .pickup-lt i.fas {
+    color: #f00;
+}
+
+.shipment-instant-quotes-widget .text-muted {
+    color: #666;
+    text-transform: capitalize;
+    font-size: 13px;
+    padding: 20px 0 0;
+}
+
+.shipment-instant-quotes-widget .like-off {
+    color: #234986;
+    font-size: 13px;
+    font-weight: 600;
+    float: left;
+}
+
+.shipment-instant-quotes-widget .checkbox.overlay-row div.checker span.checked:before {
+    content: "\2713";
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #234986;
+    font-size: 19px;
+    color: #234986;
+}
+
+.shipment-instant-quotes-widget .pickup-heading {
+    font-size: 15px;
+    font-weight: bold;
+    color: #234986;
+    padding: 10px 0;
+}
+
+.shipment-instant-quotes-widget .accessorial-padding div.checker,
+.shipment-instant-quotes-widget .accessorial-padding div.checker span,
+.shipment-instant-quotes-widget .accessorial-padding div.checker input {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    margin-top: 1px;
+}
+
+.shipment-instant-quotes-widget .accessorial-padding div.checker span.checked:before {
+    content: "\2713";
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #234986;
+    font-size: 11px;
+    color: #234986;
+}
+
+.shipment-instant-quotes-widget .accessorial-padding .pickup-select label {
+    display: inline-block;
+    cursor: pointer;
+    color: #234986;
+    position: relative;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 0 0 17px 1px;
+}
+
+.shipment-instant-quotes-widget .accessorial-padding .pickup-select span {
+    font-size: 14px;
+    color: #234986;
+}
+
+.shipment-instant-quotes-widget .accessorial-padding i.fa {
+    color: #234986;
+}
+
+.shipment-instant-quotes-widget .accessorial-padding .pickup-select {
+    margin-bottom: 9px;
+}
+
+.shipment-instant-quotes-widget .hr-line {
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0
+}
+
+
+/*.hazardous-option.clearfix {
+    width: 100px;
+    border: 2px solid #000;
+}
+.off-tg { 
+    text-align: center;
+    padding: 10px 0;
+}
+.on-tg {
+    float: left;
+    width: 50px;
+    background: #ccc;
+    text-align: center;
+    padding: 10px 0;
+}*/
+
+
+/*-- selection-option ---*/
+
+.shipment-instant-quotes-widget .stv-radio-buttons-wrapper .radio {
+    opacity: 0;
+}
+
+.shipment-instant-quotes-widget .stv-radio-buttons-wrapper label {
+    float: right;
+    padding: 1px 10px 0;
+    cursor: pointer;
+    margin-right: -1px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #eb6e32;
+    border: 1px solid #eb6e32;
+}
+
+.shipment-instant-quotes-widget .padding-20 {
+    padding-top: 20px;
+}
+
+.shipment-instant-quotes-widget .stv-radio-buttons-wrapper input:checked+label {
+    color: #eb6e32;
+    background-color: transparent;
+    border: 1px solid #eb6e32;
+}
+
+.shipment-instant-quotes-widget .stv-radio-buttons-wrapper label {
+    float: right;
+    padding: 1px 10px 0;
+    cursor: pointer;
+    margin-right: -1px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #eb6e32;
+    border: 1px solid #eb6e32;
+}
+
+.shipment-instant-quotes-widget input[type="checkbox"],
+.shipment-instant-quotes-widget input[type="radio"] {
+    box-sizing: inherit;
+    width: inherit;
+    height: inherit;
+}
+
+.shipment-instant-quotes-widget input#pickupservices-id {
+    float: left;
+    margin: 5px 9px 5px 0;
+    padding: 16px;
+    width: 18px;
+    height: 18px;
+}
+
+.shipment-instant-quotes-widget input#delivery-id {
+    float: left;
+    margin: 5px 9px 5px 0;
+    padding: 16px;
+    width: 18px;
+    height: 18px;
+}
+
+.shipment-instant-quotes-widget label {
+    padding: 0 0 0 1px;
+}
+
+.shipment-instant-quotes-widget .stv-radio-buttons-wrapper input[type="radio"] {
+    opacity: 0;
+}
+
+.shipment-instant-quotes-widget .stv-radio-buttons-wrapper label {
+    padding: 8px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/*-- end:selection-option ---*/
+
+.shipment-instant-quotes-widget .bottom-no-mrg {
+    padding-bottom: 10px;
+}
+
+.shipment-instant-quotes-widget .light-txt-12 {
+    color: #eb6e32;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.shipment-instant-quotes-widget .txt-heading-15-bold {
+    display: block;
+    color: #234986;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.shipment-instant-quotes-widget .txt-heading-15-normal {
+    display: block;
+    color: #234986;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.shipment-instant-quotes-widget .red-alert {
+    color: #f00;
+}
+
+.shipment-instant-quotes-widget div#conditionGroup {
+    float: left;
+    margin: 0 0 0 -27px;
+}
+
+.shipment-instant-quotes-widget .set-add-remove-widget select.form-select {
+    border: 1px solid #234986;
+    background: #fff;
+    padding: 6px;
+    border-radius: 0px;
+}
+
+.shipment-instant-quotes-widget input.Dimensions-input {
+    float: left;
+    width: 22%;
+    border: 1px solid #234986;
+    border-radius: 0px;
+    margin: 0 3px 0 0;
+    padding: 6px;
+}
+
+.shipment-instant-quotes-widget input#dep-Weight {
+    float: left;
+    width: 74%;
+    border-radius: 0px;
+}
+
+.shipment-instant-quotes-widget input.Weight-input {
+    float: left;
+    width: 20%;
+}
+
+.shipment-instant-quotes-widget input.Dimensions-input.disabled-input {
+    text-align: center;
+}
+
+.shipment-instant-quotes-widget input.Weight-input {
+    float: left;
+    width: 20%;
+    border: 1px solid #234986;
+    padding: 6px;
+    border-radius: 0px;
+    text-align: center;
+    border-left: 0px;
+}
+
+.shipment-instant-quotes-widget .add-item-widget .media-data i.fa.fa-plus-circle {
+    color: #eb6e32;
+    font-size: 51px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.shipment-instant-quotes-widget .add-item-widget .media-data .add-an {
+    text-align: center;
+    font-size: 16px;
+    color: #eb6e32;
+    padding-top: 14px;
+}
+
+.shipment-instant-quotes-widget a.get-quotes-link {
+    background: #ccc;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    margin-bottom: 24px;
+    margin-top: 12px;
+    font-size: 17px;
+    color: #888;
+    font-weight: bold;
+}
+
+.shipment-instant-quotes-widget .media-data {
+    padding: 30px 0;
+}
+
+.shipment-instant-quotes-widget .chooseing-item {
+    position: relative;
+}
+
+.shipment-instant-quotes-widget .chooseing-item input[type="file"] {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 99px;
+    left: 0px;
+    right: 0px;
+    height: 49px;
+    opacity: 0;
+    cursor: pointer;
+}
