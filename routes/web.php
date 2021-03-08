@@ -42,7 +42,7 @@ Route::group(['namespace'=>'Web', 'prefix'=>'/'], function(){
       Route::get('about-us', 'WebController@about');
       Route::match(['get','post'],'contact-us', 'WebController@contact')->name('contact.us');
       Route::get('why-shipzzy', 'WebController@why_shipzzy');
-      Route::get('full-truck-form', 'WebController@full_truck_form');
+      Route::match(['get','post'],'full-truck-form', 'WebController@full_truck_form')->name('full.truck');
       Route::get('less-truck-form', 'WebController@less_truck_form');
       Route::get('auto-truck-form', 'WebController@auto_truck_form');
       Route::get('freight-class', 'WebController@freight_class');

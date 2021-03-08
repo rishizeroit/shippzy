@@ -58,9 +58,13 @@ class WebController extends Controller
         return view('web.why_shipzzy');
     }
 
-    public function full_truck_form()
+    public function full_truck_form(Request $request)
     {
-        return view('web.full_truck_form');
+        if($request->isMethod == 'POST'){
+            return $request->all();
+        }else{
+            return view('web.full_truck_form');
+        }
     }
 
     public function auto_truck_form()

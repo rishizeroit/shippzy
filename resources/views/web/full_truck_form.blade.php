@@ -6,14 +6,14 @@
 
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-
 	<!-- Main -->
 	<div class="shipment-instant-quotes-widget" style="padding-top:130px ">
 
 		<div class="wrap">
 
-				<form>
-					
+				<form id="truckloadForm" method="post">
+					@csrf
+					@method('post')
 					<div class="row">
 						<div class="tell-quot-txt">Tell us about your shipment to see <span>instant quotes</span></div>
 						<div class="one-half">
@@ -37,7 +37,7 @@
 
 								<div class="input-t">
 									<label for="dep-date" class="dep-heading">Pickup city or postal code</label>
-									<input type="text" class="value-data">
+									<input type="text" class="value-data validate">
 									<div class="pickup-lt"><i class="fas fa-times-circle"></i> Pickup location is required.</div>
 								</div>
 								<!--end:input-t -->
@@ -82,7 +82,7 @@
 
 								<div class="input-t">
 									<label class="dep-heading">Delivery city or postal code</label>
-									<input type="text" class="value-data">
+									<input type="text" class="value-data validate">
 									<div class="pickup-lt"><i class="fas fa-times-circle"></i> 	Delivery location is required.</div>
 								</div>
 								<!--end:input-t -->
@@ -211,7 +211,7 @@
 							<div class="form-group">
 								<div class="input-t">
 									<label class="dep-heading">Item description</label>
-									<input type="text" class="value-data" value="554678">
+									<input type="text" class="value-data validate item_description">
 									<div class="pickup-lt">e.g. "widgets" not "pallet of widgets"</div>
 								</div>
 								<!--end:input-t -->
@@ -282,7 +282,7 @@
 							<div class="input-t">
 								<label class="dep-heading">Weight of 1 pallet</label>
 								<div class="form-2section clearfix">
-									<input type="text" id="dep-Weight" class="value-data" value="5">
+									<input type="text" id="dep-Weight" class="value-data validate">
 									<input type="text" class="Weight-input disabled-input" value="ibs" readonly disabled="disabled" >
 								</div>								
 							</div>
@@ -337,7 +337,7 @@
 						<input type="file" name="">
 					</div>
 					<div class="add-an">Add another item</div>
-					<a href="#" class="get-quotes-link">Get quotes</a>
+					<button type="submit" class="btn btn-block form-save" disabled>Get quotes</button>
 				</div>
 			</div>
 			<!--end:row --->
@@ -345,7 +345,7 @@
 		<!--end:add-item-widget --->
 
 
-				</form>
+		</form>
 		</div>
 	</div>	
 	<!-- //Main -->
@@ -406,13 +406,8 @@ $(function() {
 </script>
 
 <!-- end:form javascript -->
+@endsection
 
-
-
-
-
-
-
-
-	@endsection
-
+@push('scripts')
+<script src="{{base_url('js/front/truckload_form.js')}}"></script>
+@endpush
